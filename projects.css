@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+@font-face {
+  font-family: Dogica;
+  src: url(./font/dogica.otf);
+}
+
+.info {
+  font-family: "Work Sans", Dogica, monospace;
+  font-size: 18px;
+}
+
+ul li::before {
+  color: red;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | Temperature </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="styles/code.css" rel="stylesheet" />
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-10 col-xs-12">
+        <h2 style="margin-bottom: 0;">
+          <i class="nes-icon coin"></i>
+          <a href="../index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-sm-2 col-xs-12">
+          <h5 style="text-align: right;">        
+            <a href="../about.html" style="color: #212529; line-height: 40px;">
+            About
+          </a>
+        </h5>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px">
+    <main class="main-content">
+
+      <!-- Title -->
+      <section class="topic">
+        <h2 id="about">07. Temperature (+15 XP)</h2>
+        <br>
+      </section>
+
+      <!-- Operators -->
+      <section class="topic">
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Operators</h3>
+        <br>
+
+        <p>Computers are incredible at doing math calculations. Now that we have learned about variables, let’s use them with arithmetic operators to calculate things!</p>
+
+        <p>Python has the following arithmetic operators:</p>
+
+        <ul>
+          <li><code>+</code> Addition</li>
+          <li><code>-</code> Subtraction</li>
+          <li><code>*</code> Multiplication</li>
+          <li><code>/</code> Division</li>
+          <li><code>%</code> Modulo (returns the remainder)</li>
+        </ul>
+
+        <pre class="line-numbers">
+          <code class="python">
+          score = 0           # score is 0
+          score = 4 + 3       # score is now 7
+          score = score - 3   # score is now 4
+          score = 4 * 3       # score is now 12
+          score = 4 / 3       # score is now 1.3333
+          score = 4 % 3       # score is now 1
+
+          print(score)        # Output: 4
+          </code>
+        </pre>
+
+        <p>And take a look at this code that calculates a 20% tip useing parentheses and and a float (decimal number):</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          cost_pizza = 2.99
+          cost_coke = 0.99
+
+          tip = (cost_pizza + cost_coke) * 0.2
+
+          print(tip) # Output: 0.796
+          </code>
+        </pre>
+
+        <p>Now that we’ve learned about the basics of variables and operators, let’s put them to use!</p>
+      </section>
+      <br>
+
+      <!-- Instructions -->
+      <section class="topic">
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
+        <br>
+        
+        <p>Create a <strong>temperature.py</strong> program that converts a temperature from Fahrenheit (F) to Celsius (C).</p>
+
+        <p>Google the current temperature of New York City in Fahrenheit.</p>
+        
+        <p>Use the following formula and write it out in Python:</p>
+
+        <p>C = (F - 32) / 1.8</p>
+
+        <p>Print out the converted temperature.</p>
+
+        <br>
+      </section>
+
+
+      <a class="nes-btn" href="../index.html">Back</a>
+      <button type="button" class="nes-btn is-primary">Complete</button>
+      <br>
+      <br>
+      <h5>Solution: <a href="https://github.com/sonnynomnom/asdfasdfasdf/blob/main/python/answers/temperature.py" target="_blank" rel="noopener">temperature.py</a></h5>
+
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

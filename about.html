@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | About </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="./about.css" rel="stylesheet" />
+
+  <script src="./about.js"></script>
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom:40px'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-7 col-xs-12">
+        <h2 style="margin-bottom: 0; line-height: 55px;">
+          <i class="nes-icon coin"></i>
+          <a href="index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+
+      <div class="col-sm-5 col-xs-12">
+        <div class="row">
+          <h5 style="margin-right: 30px; margin-bottom: 0;">        
+            <a href="./projects.html" style="color: #212529; line-height: 55px;">
+            Projects
+            </a>
+          </h5>
+
+          <h5 style="margin-right: 30px; margin-bottom: 0;">        
+            <a href="./about.html" style="color: #212529; line-height: 55px;">
+            About
+            </a>
+          </h5>
+
+          <a href="./community.html"><button type="button" class="nes-btn is-error">Join Community</button></a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 30px">
+    <div class="row">
+
+      <div class="col-sm-10 col-xs-12">
+        <div class="nes-balloon from-right" style="width: 103%; min-width: 102%;">
+          <p id="welcome"></p>
+
+          <script>
+            // Type effect
+
+            var i = 0;
+            var txt = "At last, a learning resource for developers, by developers! "; /* The text */
+            var speed = 50; /* milliseconds */
+
+            function typeWriter() {
+              if (i === txt.length) {
+                document.getElementById("welcome").innerHTML += '<i class="nes-icon heart is-small"></i>';
+              }
+
+              if (i < txt.length) {
+                document.getElementById("welcome").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+
+            typeWriter();
+          </script>
+        </div>
+      </div>
+
+      <div class="col">
+        <img src="./images/bot.png" height="130" style="margin-left: 50px; margin-right: 0px"/>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-xs-12">
+
+        <div class="nes-container with-title">
+          <h3 class="title">How to Play</h3>
+          <div>
+            <div class="lists">
+              <ul class="nes-list is-circle" style="margin-bottom: 0;">
+                <li style="margin-bottom: 10px;">&nbsp;Complete tasks</li>
+                <li style="margin-bottom: 10px;">&nbsp;Gain XP</li>
+                <li style="margin-bottom: 10px;">&nbsp;Collect badges</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="nes-container with-title is-dark" style="margin-top: 50px; margin-bottom: 50px">
+          <h3 class="title">My Stats</h3>
+
+          <img src="./images/avatar.png" height=60 />
+          
+          <div contenteditable="true" style="width:150px; height:60px; display:inline">
+            Your Name
+          </div>
+          <br>
+          <br>
+
+          <div style="margin-bottom: 10px">
+            &nbsp;<i class="nes-icon is-small like"></i>
+            Completed: &nbsp;&nbsp;&nbsp;<span id="total-completed">0</span>
+            </i>
+          </div>
+          <div style="margin-bottom: 10px">
+            &nbsp;<i class="nes-icon is-small heart"></i>
+            Total XP: &nbsp;&nbsp;&nbsp;&nbsp;<span id="exp">0</span>
+            </i>
+          </div>
+          <div>
+            &nbsp;<i class="nes-icon is-small star"></i>
+            Streak: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="streak">1</span>
+          </div>
+
+          <br>
+          <br>
+          
+          <img src="images/badge_boulder.png" height="25px" />
+            <img src="images/badge_cascade.png" height="25px" />
+            <img src="images/badge_thunder.png" height="25px" />
+            <img src="images/badge_rainbow.png" height="25px" />
+            <img src="images/badge_soul.png" height="25px" style="filter: saturate(0) brightness(1.75);" />
+            <img src="images/badge_marsh.png" height="25px" style="filter: saturate(0) brightness(1.75);"/>
+            <img src="images/badge_volcano.png" height="25px" style="filter: saturate(0) brightness(1.75);" />
+            <img src="images/badge_earth.png" height="25px" style="filter: saturate(0) brightness(2.75);" />
+            <br>
+            <br>
+
+          <div style="background-color:#212529; padding: 1rem 1.2rem 1rem 1rem;width:calc(100% + 8px);">
+            <label for="dark_select" style="color:#fff">Language</label>
+            <div class="nes-select is-dark">
+              <select required id="dark_select">
+                <option value="" disabled selected hidden>Python</option>
+                <option value="0">Python</option>
+                <option value="1">Coming Soon: HTML</option>
+                <option value="2">Coming Soon: JavaScript</option>
+                <option value="3">Coming Soon: Command Line</option>
+              </select>
+            </div>
+          </div>  
+     
+        </div>
+
+        <div class="nes-container with-title" style="margin-top: 50px; margin-bottom: 50px">
+          <h3 class=""title>Social</h3>
+          <div>
+            <a href="#">
+              <i class="nes-icon twitter"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon facebook"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon instagram"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon github"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon youtube"></i>
+            </a>
+          </div>
+          <br>
+
+          <div class="nes-field">
+            <label for="name_field" style="margin-bottom:15px;">Newsletter sign up!</label>
+            <input type="text" id="name_field" class="nes-input" placeholder="Email">
+          </div>
+        </div>
+       
+
+        <div class="nes-container with-title is-dark" style="margin-top: 50px; margin-bottom: 50px">
+          <h3 class=""title>Sponsored by:</h3>
+          <div>
+            <a href="#">
+              Sponsor us here!
+            </a>
+          </div>
+        </div>
+
+        <div class="nes-container with-title" style="margin-top: 50px; margin-bottom: 50px">
+          <h3 class=""title>Settings</h3>
+          <div style="padding: 1rem 0;">
+            <label>
+              <input type="radio" class="nes-radio" name="answer-dark" checked />
+              <span>Light</span>
+            </label>
+            <label>
+              <input type="radio" class="nes-radio" name="answer-dark" />
+              <span>Dark</span>
+            </label>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="col-md-8 col-sm-12 col-xs-12">
+        <div class="nes-container with-title">
+          <h3 class="title">About</h3>
+            
+          <!-- About -->
+          <section class="topic">
+            <h3 id="about"><a href="#about">#</a>&nbsp;Codédex</h3>
+            <br>
+
+            <p class="info">Codédex is the brand new way to learn to code for kids and adults alike. Journey through the fantasy land of Python, HTML/CSS, or JavaScript, earn exp. points (XP) to unlock new regions and items, and collect all the badges at your own pace.</p>
+            <p class="info">This is currently the Beta version, so let us know what you think! (づ｡◕‿‿◕｡)づ:･ﾟ✧</p>
+            <br>
+            <br>
+          </section>
+
+          <!-- Team -->
+          <section class="topic">
+            <h3 id="about"><a href="#about">#</a>&nbsp;The Team</h3>
+            <br>
+
+            <p class="info">The folks behind Codédex have taught Computer Science at Columbia, NYU, CUNY, and have brought programming to over 50 million users around the world at Codecademy.</p>
+            <p class="info">Each exercise is curated by world-class educators and developers and works both in classrooms and online setting.</p>
+            <br>
+            <br>
+          </section>
+
+          <!-- Pricing -->
+          <section class="topic">
+            <h3 id="installation"><a href="#installation">#</a>&nbsp;Pricing</h3>
+            <br>
+
+            <p class="info">The best part? Codédex maps and projects are totally free!</p>
+            <p class="info">If that's not enough, we also have <a href="#" target="_blank" rel="noopener"><b>Codédex++</b></a> for $12.99 a month. It's an inclusive community with weekly events, guest speakers, code mentors, peer reviews, office hours, and awesome fellow learners who will join you on your coding journey.</p>
+            <p class="info">Every dollar we earn will go back into the product & commuity to make them better. You don't want to miss this!</p>
+            <br>
+            <br>
+          </section>
+
+          <!-- Bugs -->
+          <section class="topic">
+            <h3 id="installation"><a href="#installation">#</a>&nbsp;Report Bugs</h3>
+            <br>
+
+            <p class="info">We are trying to make this the most fun place to learn to code online.</p>
+            <p class="info">Please report bugs and typos here:</p>
+            
+            <textarea id="textarea_field" class="nes-textarea" style="height:200px" placeholder="Type here..."></textarea>
+          </section>
+
+
+        </div>
+
+        <h3 class="topic-title" style="margin-top: 40px">
+          <i class="nes-icon star"></i>
+          Team Members
+        </h3>
+
+        <div class="nes-container is-dark">
+          <div class="row">
+            <div class="col-xs-2">
+              <img 
+                src="images/sonny50.jpg" 
+                style="width: 100%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;" />
+            </div>
+            <div class="col-xs-10">
+              <h3>@sonnynomnom</h3>
+              <p>Super frontend developer newbie</p>
+              <div>
+                <a href="https://github.com/sonnynomnom">
+                  <div class="nes-icon github"></div>
+                </a>
+                <a href="https://twitter.com/sonnynomnom">
+                  <div class="nes-icon twitter"></div>
+                </a>
+                <a href="https://instagram.com/sonnynomnom">
+                  <div class="nes-icon instagram"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <br>
+
+        <section class="contributors">
+          <h3 class="topic-title" style="margin-top: 40px">
+            <i class="nes-icon heart"></i>
+            Contributors
+          </h3>
+
+          <a class="contributor" href="https://github.com/dnoxal" target="_black">
+            <img class="nes-avatar is-large is-rounded lazy" src="https://github.com/dnoxal.png?size=64" :alt="Contributor sonny">
+            <p>@Dnoxal</p>
+          </a>
+
+          <a class="contributor" href="https://github.com/dnoxal" target="_black">
+            <img class="nes-avatar is-large is-rounded lazy" src="https://github.com/dnoxal.png?size=64" :alt="Contributor sonny">
+            <p>@you?</p>
+          </a>
+
+          <a class="contributor" href="https://github.com/dnoxal" target="_black">
+            <img class="nes-avatar is-large is-rounded lazy" src="https://github.com/dnoxal.png?size=64" :alt="Contributor sonny">
+            <p>@you?</p>
+          </a>
+
+          <a class="contributor" href="https://github.com/dnoxal" target="_black">
+            <img class="nes-avatar is-large is-rounded lazy" src="https://github.com/dnoxal.png?size=64" :alt="Contributor sonny">
+            <p>@you?</p>
+          </a>
+
+          <a class="contributor" href="https://github.com/dnoxal" target="_black">
+            <img class="nes-avatar is-large is-rounded lazy" src="https://github.com/dnoxal.png?size=64" :alt="Contributor sonny">
+            <p>@you?</p>
+          </a>
+
+          <a class="contributor" href="https://github.com/dnoxal" target="_black">
+            <img class="nes-avatar is-large is-rounded lazy" src="https://github.com/dnoxal.png?size=64" :alt="Contributor sonny">
+            <p>@you?</p>
+          </a>
+        </section>
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

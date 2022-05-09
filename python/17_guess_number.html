@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | Guess Number </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="styles/code.css" rel="stylesheet" />
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-10 col-xs-12">
+        <h2 style="margin-bottom: 0;">
+          <i class="nes-icon coin"></i>
+          <a href="../index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-sm-2 col-xs-12">
+          <h5 style="text-align: right;">        
+            <a href="../about.html" style="color: #212529; line-height: 40px;">
+            About
+          </a>
+        </h5>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px">
+    <main class="main-content">
+
+      <!-- Title -->
+      <section class="topic">
+        <h2 id="about">17. Guess Number (+15 XP)</h2>
+        <br>
+      </section>
+
+      <!-- Loop -->
+      <section class="topic">
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Loop</h3>
+        <br>
+
+        <p>Now that we got a demo of loops, let’s write one!</p>
+
+        <p>A <code>while</code> loop looks very similar to an <code>if</code> statement. And just like an <code>if</code> statement, it executes the code if the condition is <code>True</code>.</p>
+          
+        <p>However, the difference is that the <code>while</code> loop will continue to execute the code inside of it, over and over again, as long as the condition is <code>True</code>.</p>
+          
+        <p>Here is what a while loop looks like:</p>
+        
+        <pre class="line-numbers">
+          <code class="python">
+          while condition:
+            code inside
+          </code>
+        </pre>
+
+        <p>In other words, instead of executing if something is true, it executes while that thing is true.</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          while guess != 8: 
+            print("Wrong guess, try again: ")
+            guess = input()
+          </code>
+        </pre>
+          
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions (Needs Work)</h3>
+        <br>
+        
+        <p>Let's continue on from the code above.</p>
+
+        <p>Create a <strong>guess.py</strong> program and type in the following:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          while guess != 8: 
+            print("Wrong guess, try again: ")
+            guess = input()
+          </code>
+        </pre>
+        
+        <br>
+      </section>
+
+      <a class="nes-btn" href="../index.html">Back</a>
+      <button type="button" class="nes-btn is-primary">Complete</button>
+      <br>
+      <br>
+      <h5>Solution: <a href="https://github.com/sonnynomnom/asdfasdfasdf/blob/main/python/answers/guess_number.py" target="_blank" rel="noopener">guess_number.py</a></h5>
+
+      
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

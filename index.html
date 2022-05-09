@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Learn to code made fun">
+  <meta name="keywords" content="Python, HTML, CSS, JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Codédex | Learn to code made fun "/>
+  <title>Codédex | Home </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-7 col-xs-12">
+        <h2 style="margin-bottom: 0; line-height: 55px;">
+          <i class="nes-icon coin"></i>
+          <a href="#" style="color: #212529;">Codédex</a>
+        </h2>
+      </div>
+
+
+      <div class="col-sm-5 col-xs-12">
+        <div class="row">
+          <h5 style="margin-right: 30px; margin-bottom: 0;">        
+            <a href="./projects.html" style="color: #212529; line-height: 55px;">
+            Projects
+            </a>
+          </h5>
+
+          <h5 style="margin-right: 30px; margin-bottom: 0;">        
+            <a href="./about.html" style="color: #212529; line-height: 55px;">
+            About
+            </a>
+          </h5>
+
+          <a href="./community.html"><button type="button" class="nes-btn is-error">Join Community</button></a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px; margin-top: 0; margin-bottom: 110px" >
+    
+    <div style="position: relative; background-image: url('./images/header.png'); background-repeat: no-repeat; background-size: 100%; height: 400px;">
+    
+      <h1 class="floating" style="margin: auto; position: relative; top: 15%; text-align: center; color: white; font-size: 40px; text-shadow: 0px 6px #0026ff;">THE LEGEND OF PYTHON</h1>
+      <h4 style="margin: auto; position: relative; top: 18%; text-align: center; color: #684001;">Beginner's Edition</h4>
+
+      <div class="row" style="position: absolute; bottom: -90px;">
+
+        <div class="col-sm-2 col-xs-12">
+          <!-- <i class="nes-bcrikko"></i> -->
+          <img src="./images/bot2.png" height="130" style="margin-left: 35px; margin-right: 5px"/>
+        </div>
+
+        <div class="col-sm-10 col-xs-12">
+          <div class="nes-balloon from-left" style="width: 103%; min-width: 103%;">
+            <p id="demo" style="width: 100%; min-width: 53em;">
+              <!-- Welcome to Codédex, let's lvl up your coding chops! <i class="nes-icon heart is-small"></i> -->
+            </p>
+
+            <script>
+              // Type effect
+
+              var i = 0;
+              var txt = "Welcome to Codédex, let's lvl up your coding chops! "; /* The text */
+              var speed = 50; /* milliseconds */
+
+              function typeWriter() {
+                if (i === txt.length) {
+                  document.getElementById("demo").innerHTML += '<i class="nes-icon heart is-small"></i>';
+                }
+
+                if (i < txt.length) {
+                  document.getElementById("demo").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+
+              typeWriter();
+            </script>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-xs-12">
+
+        <div class="nes-container with-title">
+          <h3 class="title">How to Play</h3>
+          <div>
+            <div class="lists">
+              <ul class="nes-list is-circle" style="margin-bottom: 0;">
+                <li style="margin-bottom: 10px">&nbsp;Complete tasks</li>
+                <li style="margin-bottom: 10px">&nbsp;Gain XP</li>
+                <li style="margin-bottom: 10px">&nbsp;Collect badges</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nes-container with-title is-dark" style="margin-top: 50px; margin-bottom: 50px">
+          <h3 class="title">My Stats</h3>
+
+          <img src="./images/avatar.png" height=60 />
+          
+          <div id="userName" contenteditable="true" style="width:150px; height:100px; display:inline">
+            Your Name
+          </div>
+
+          <script>
+            var editable = document.getElementById('userName');
+
+            userName.addEventListener('input', function() {
+              console.log('Hey, the name is changed!');
+              console.log('The userName is now: ' + userName.textContent);
+
+              updateUserName();
+            });
+          </script>
+
+          <!-- <script>
+            var contenteditable = document.querySelector('[contenteditable]'),
+            text = contenteditable.textContent;
+
+            updateUserName(text);
+          </script> -->
+          <br>
+          <br>
+
+          <div style="margin-bottom: 10px">
+            &nbsp;<i class="nes-icon is-small like"></i>
+            Completed: &nbsp;&nbsp;&nbsp;<span id="total-completed">X</span>
+            </i>
+          </div>
+          <div style="margin-bottom: 10px">
+            &nbsp;<i class="nes-icon is-small heart"></i>
+            Total XP: &nbsp;&nbsp;&nbsp;&nbsp;<span id="exp">X</span>
+            </i>
+          </div>
+          <div>
+            &nbsp;<i class="nes-icon is-small star"></i>
+            Streak: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="streak">1</span>
+          </div>
+
+          <br>
+          <br>
+          
+          <img src="images/badge_boulder.png" height="25px" />
+            <img src="images/badge_cascade.png" height="25px" />
+            <img src="images/badge_thunder.png" height="25px" />
+            <img src="images/badge_rainbow.png" height="25px" />
+            <img src="images/badge_soul.png" height="25px" style="filter: saturate(0) brightness(1.75);" />
+            <img src="images/badge_marsh.png" height="25px" style="filter: saturate(0) brightness(1.75);"/>
+            <img src="images/badge_volcano.png" height="25px" style="filter: saturate(0) brightness(1.75);" />
+            <img src="images/badge_earth.png" height="25px" style="filter: saturate(0) brightness(2.75);" />
+            <br>
+            <br>
+
+          <div style="background-color:#212529; padding: 1rem 1.2rem 1rem 1rem;width:calc(100% + 8px);">
+            <label for="dark_select" style="color:#fff">Language</label>
+            <div class="nes-select is-dark">
+              <select required id="dark_select">
+                <option value="" disabled selected hidden>Python</option>
+                <option value="0">Python</option>
+                <option value="1">Coming Soon: HTML</option>
+                <option value="2">Coming Soon: JavaScript</option>
+                <option value="3">Coming Soon: Command Line</option>
+              </select>
+            </div>
+          </div>  
+
+        </div>
+
+        <div class="nes-container with-title" style="margin-top: 50px; margin-bottom: 50px">
+          <h3 class=""title>Social</h3>
+          <div>
+            <a href="#">
+              <i class="nes-icon twitter"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon facebook"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon instagram"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon github"></i>
+            </a>
+            <a href="#">
+              <i class="nes-icon youtube"></i>
+            </a>
+          </div>
+          <br>
+
+          <div class="nes-field">
+            <label for="name_field" style="margin-bottom:15px;">Newsletter sign up!</label>
+            <input type="text" id="name_field" class="nes-input" placeholder="Email">
+          </div>
+        </div>
+
+       
+
+        <div class="nes-container with-title is-dark" style="margin-top: 50px; margin-bottom: 50px">
+          <h3 class=""title>Sponsored by:</h3>
+          <div>
+            <a href="#">
+              Sponsor us here!
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8 col-sm-12 col-xs-12">
+        <div class="nes-container with-title">
+          <h3 class="title">
+            <img src="images/badge_boulder.png" style="width: 25px;"/>
+            Hello World
+          </h3>
+         
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">01.&nbsp; Setting Up</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="10"
+                max="10"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a class="nes-btn" href="python/1_setting_up.html">+10XP</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">02.&nbsp; Hello World</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a class="nes-btn" href="python/2_hello_world.html">+10XP</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">03.&nbsp; Pattern</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a class="nes-btn" href="python/3_pattern.html">+15XP</a>
+            </div>
+          </div>
+        
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              04.&nbsp; Initials
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="5"
+                max="5"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/4_initials.html"><button type="button" class="nes-btn">+15XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              05.&nbsp; Snail Mail
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-error"
+                value="2"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/5_snail_mail.html"><button type="button" class="nes-btn is-primary" id="start-button">Start</button></a>
+            </div>
+          </div>
+
+        </div>
+      
+        <div class="nes-container is-dark with-title" style="margin-top: 40px">
+          <h3 class="title">
+            <img src="images/badge_cascade.png" style="width: 25px;"/>
+            Variables
+          </h3>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              06.&nbsp; Data Types
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="10"
+                max="10"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a class="nes-btn" href="python/6_data_types.html">+10XP</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              07.&nbsp; Temperature
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="10"
+                max="10"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/7_temperature.html"><button type="button" class="nes-btn">+15XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              08.&nbsp; BMI
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/8_bmi.html"><button type="button" class="nes-btn" id="start-button">+10XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              09.&nbsp; Quadratic</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-warning"
+                value="4"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/9_quadratic.html"><button type="button" class="nes-btn is-primary">Start</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              10.&nbsp; Currency
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-error"
+                value="0"
+                max="10"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <button type="button" class="nes-btn is-disabled">+????</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="nes-container with-title" style="margin-top: 40px;">
+          <h3 class="title">
+            <img src="images/badge_thunder.png" style="width: 25px;"/>
+            Control Flow
+          </h3>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              11.&nbsp; Coin Flip
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="./python/11_coin_flip.html"><button type="button" class="nes-btn">+10XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              12.&nbsp; Grades
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/12_grades.html"><button" class="nes-btn" id="start-button">+10XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              13.&nbsp; pH Levels
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/13_ph_levels.html"><button type="button" class="nes-btn">+15XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              14.&nbsp; Magic 8-Ball
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/14_magic_8_ball.html"><button class="nes-btn">+15XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              15.&nbsp; Sorting Hat
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-error"
+                value="2"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/15_sorting_hat.html"><button type="button" class="nes-btn is-primary">Start</button></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="nes-container is-dark with-title" style="margin-top: 40px">
+          <h3 class="title">
+            <img src="images/badge_rainbow.png" style="width: 25px;"/>
+            Loops
+          </h3>
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              16.&nbsp; Enter PIN</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="10"
+                max="10"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/16_enter_pin.html"><button type="button" class="nes-btn">
+                +10XP
+              </button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              17.&nbsp; Guess Number
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="10"
+                max="10"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/17_guess_number.html"><button type="button" class="nes-btn">+15XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              18.&nbsp; Detention
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/18_detention.html"><button type="button" class="nes-btn" id="start-button">+15XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              19.&nbsp; 99 Bottles</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="6"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/19_99_bottles.html"><button type="button" class="nes-btn">+20XP</button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              20.&nbsp; Fizz Buzz</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-error"
+                value="2"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/20_fizz_buzz.html"><button type="button" class="nes-btn is-primary">Start</button></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lists -->
+        <div class="nes-container with-title" style="margin-top: 40px">
+          <h3 class="title">
+            <img src="images/badge_soul.png" style="width: 25px;"/>
+            Lists
+          </h3>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              21.&nbsp; Coming June 1</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="0"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/enter_pin.html"><button type="button" class="nes-btn is-disabled">
+                +????
+              </button></a>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              22.&nbsp; Coming June 2</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="0"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/enter_pin.html"><button type="button" class="nes-btn is-disabled">
+                +????
+              </button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              23.&nbsp; Coming June 3</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="0"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/enter_pin.html"><button type="button" class="nes-btn is-disabled">
+                +????
+              </button></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              24.&nbsp; Coming June 4</div>
+            <div class="col-sm-5 col-xs-12">
+              <progress
+                class="nes-progress is-success"
+                value="0"
+                max="6"
+              >
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <a href="python/enter_pin.html"><button type="button" class="nes-btn is-disabled">
+                +????
+              </button></a>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="topic-title" style="margin-top: 40px">
+          <i class="nes-icon star"></i>
+          Team Members
+        </h3>
+
+        <div class="nes-container is-dark">
+          <div class="row">
+            <div class="col-xs-2">
+              <img 
+                src="images/sonny50.jpg" 
+                style="width: 100%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;" />
+            </div>
+            <div class="col-xs-10">
+              <h3>@sonnynomnom</h3>
+              <p>Super frontend developer newbie</p>
+              <div>
+                <a href="https://github.com/sonnynomnom">
+                  <div class="nes-icon github"></div>
+                </a>
+                <a href="https://twitter.com/sonnynomnom">
+                  <div class="nes-icon twitter"></div>
+                </a>
+                <a href="https://instagram.com/sonnynomnom">
+                  <div class="nes-icon instagram"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

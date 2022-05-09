@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | Pattern </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="styles/code.css" rel="stylesheet" />
+
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-10 col-xs-12">
+        <h2 style="margin-bottom: 0;">
+          <i class="nes-icon coin"></i>
+          <a href="../index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-sm-2 col-xs-12">
+          <h5 style="text-align: right;">        
+            <a href="../about.html" style="color: #212529; line-height: 40px;">
+            About
+          </a>
+        </h5>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px">
+    <main class="main-content">
+
+      <!-- Title -->
+      <section class="topic">
+        <h2 id="about">03. Pattern (+15 XP)</h2>
+        <br>
+      </section>
+
+      <!-- Print -->
+      <section class="topic">
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Line by Line</h3>
+        <br>
+        <p>Python is run line by line, from top to bottom.</p>
+        <p>We can output multiple messages by adding more <code>print()</code> functions:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          print("Hello")
+          print("Goodbye")
+          </code>
+        </pre>
+
+        <p>This will output:</p>
+        
+        <pre class="line-numbers">
+          <code class="python">
+          Hello
+          Goodbye
+          </code>
+        </pre> 
+          
+        <p>Now let’s use what we learned so far to complete a coding challenge!</p>
+        <br>
+        
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
+        <br>
+        
+        <p>Instead of displaying those two lines in the output, edit the code so that we output the following pattern in the terminal:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+                 1
+               2 3
+             4 5 6
+          7 8 9 10
+          </code>
+        </pre> 
+
+        <p>Exactly how it is.</p>
+        <br>
+      </section>
+
+      <a class="nes-btn" href="../index.html">Back</a>
+      <button type="button" class="nes-btn is-primary">Complete</button> 
+      
+      <br><br>
+      <h5>Solution: <a href="https://github.com/sonnynomnom/asdfasdfasdf/blob/main/python/answers/pattern.py" target="_blank" rel="noopener">pattern.py</a></h5>
+  
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

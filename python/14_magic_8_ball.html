@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | Magic 8-Ball </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="styles/code.css" rel="stylesheet" />
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-10 col-xs-12">
+        <h2 style="margin-bottom: 0;">
+          <i class="nes-icon coin"></i>
+          <a href="../index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-sm-2 col-xs-12">
+          <h5 style="text-align: right;">        
+            <a href="../about.html" style="color: #212529; line-height: 40px;">
+            About
+          </a>
+        </h5>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px">
+    <main class="main-content">
+
+      <!-- Title -->
+      <section class="topic">
+        <h2 id="about">14. Magic 8-Ball (+15 XP)</h2>
+        <br>
+      </section>
+
+      <!-- Print -->
+      <section class="topic">
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Random</h3>
+        <br>
+        <p>In Python, we can use the <code>.randint()</code> function from the <code>random</code> module to generate a random number from a range.</p>
+
+        <p>But first, let’s import this module so we can use its functions.</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          import random
+          </code>
+        </pre>  
+        
+
+        <p>Next, we’ll create a variable to store the randomly generated value. Declare a variable called <code>random_number</code>, and assign it to the function call:
+          
+        <pre class="line-numbers">
+          <code class="python">
+          random.randint(1, 9)
+          </code>
+        </pre>  
+
+        <p>which will generate a random number between 1 (inclusive) and 9 (inclusive).</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          import random
+
+          num = random.randint(1, 9)
+
+          print(num)
+          </code>
+        </pre>  
+
+        <p>The output should be different each time.</p>
+        <br>
+        <br>
+        
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
+        <br>
+        
+        <p>The <a href="https://en.wikipedia.org/wiki/Magic_8-ball" target="_blank">Magic 8-Ball</a> is a popular toy developed in the 1950s for fortune-telling or advice seeking.</p>
+
+        <p>Create a <b>magic8.py</b> program that can answer any “Yes” or “No” question with a different fortune each time it executes.</p>
+
+        <p>We’ll be using the following 9 possible answers for our Magic 8-Ball:
+        
+        <ul>
+          <li><code>Yes - definitely.</code></li>
+          <li><code>It is decidedly so.</code></li>
+          <li><code>Without a doubt.</code></li>
+          <li><code>Reply hazy, try again.</code></li>
+          <li><code>Ask again later.</code></li>
+          <li><code>Better not tell you now.</code></li>
+          <li><code>My sources say no.</code></li>
+          <li><code>Outlook not so good.</code></li>
+          <li><code>Very doubtful.</code></li>
+        </ul>
+
+        <p>The output of should have the following format:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          Question: [Question]
+          Magic 8-Ball: [Answer]
+          </code>
+        </pre>  
+
+        <p>For example:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          Question: Is this real life?
+          Magic 8-Ball: Better not tell you now.
+          </code>
+        </pre> 
+
+        <br>        
+      </section>
+
+      <a class="nes-btn" href="../index.html">Back</a>
+      <button type="button" class="nes-btn is-primary">Complete</button> 
+      
+      <br><br>
+      <h5>Solution: <a href="https://github.com/sonnynomnom/asdfasdfasdf/blob/main/python/answers/magic_8_ball.py" target="_blank" rel="noopener">magic_8_ball.py</a></h5>
+  
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

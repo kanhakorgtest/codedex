@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | Setting Up </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="styles/code.css" rel="stylesheet" />
+
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-10 col-xs-12">
+        <h2 style="margin-bottom: 0;">
+          <i class="nes-icon coin"></i>
+          <a href="../index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-sm-2 col-xs-12">
+          <h5 style="text-align: right;">        
+            <a href="../about.html" style="color: #212529; line-height: 40px;">
+            About
+          </a>
+        </h5>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px">
+    <main class="main-content">
+
+      <!-- Title -->
+      <section class="topic">
+        <h2 id="about">01. Setting Up (+10 XP)</h2>
+        <br>
+      </section>
+
+      <!-- Print -->
+      <section class="topic">
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Code Editor</h3>
+        <br>
+
+        <p>Welcome to the very first task of The Legend of Python!</p>
+
+        <p>We know you are excited to get started, but before you write your first line of Python code, you need to grab yourself a code editor.</p>
+
+        <p>A <strong>code editor</strong> is a text editor where we can write and execute code. We recommend Visual Studio Code, created by Microsoft.</p>
+        <br>
+
+
+      <img src="../images/pixel_vs_code.png" height=250/>
+      <br>
+      <br>
+
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Python</h3>
+        <br>
+
+        <p>The programming language we are using is Python, which is created by Guido van Rossum in 1991.</p>
+
+        <p>Its design philosophy focuses on code readability, which makes it a wonderful coding language for beginners.</p>
+
+        <p>Python is also super versatile and is heavily used in:</p>
+        <ul>
+          <li>Data Analysis</li>
+          <li>Data Visualization</li>
+          <li>Machine Learning</li>
+          <li>Natural Language Processing</li>
+          <li>Game Development</li>
+          <li>Web Scraping</li>
+          <li>And more!</li>
+        </ul>
+        <!-- </ul> data analysis, data visualization, machine learning, natural language processing, web scraping, web development, game development, and more! -->
+        
+        <p>All the code we write will be in Python files.</p>
+        <p>Audio files end in <strong>.mp3</strong>, GIF files end in <strong>.gif</strong>. Python files have the file extension <strong>.py</strong>.</p>
+        <br>
+          
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
+        <br>
+        
+        <ol>
+          <li><a href="https://code.visualstudio.com/" target="_blank">Download Visual Studio Code</a> to your computer, whether it's a Mac or a PC.</li><br>
+          <li>Watch this quick 5 min video: <a href="https://youtu.be/S320N3sxinE" target="_target">Get Started with Visual Studio Code</a>.</li><br>
+          <li>Create a new folder in your desktop and name it <strong>codedex</strong>.</li><br>
+          <li>Inside the <strong>codedex</strong> folder, create an empty file and name it <strong>hello_world.py</strong>.</li><br>
+        </ol>
+        
+        <p>You are now ready for the journey ahead.</p>
+        <p>Happy coding!</p>
+        <br>
+        
+      </section>
+
+      <a class="nes-btn" href="../index.html">Back</a>
+      <button type="button" class="nes-btn is-primary">Complete</button>
+
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

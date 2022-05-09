@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+@font-face {
+  font-family: Dogica;
+  src: url(./font/dogica.otf);
+}
+
+.info {
+  font-family: "Work Sans", Dogica, monospace;
+  font-size: 18px;
+}
+
+/* Contributors */
+.contributor {
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+  width: 150px;
+}
+.contributor > p {
+  margin: .5rem;
+  font-size: 12px;
+}
+.contributor img.nes-avatar {
+  transition: all .4s;
+  display: inline-block;
+}
+.contributor:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | Data Types </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="styles/code.css" rel="stylesheet" />
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-10 col-xs-12">
+        <h2 style="margin-bottom: 0;">
+          <i class="nes-icon coin"></i>
+          <a href="../index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-sm-2 col-xs-12">
+          <h5 style="text-align: right;">        
+            <a href="../about.html" style="color: #212529; line-height: 40px;">
+            About
+          </a>
+        </h5>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px">
+    <main class="main-content">
+
+      <!-- Title -->
+      <section class="topic">
+        <h2 id="about">07. Data Types (+10 XP)</h2>
+        <br>
+      </section>
+
+      <!-- Variables -->
+      <section class="topic">
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Variables</h3>
+        <br>
+
+        <p>Variables are containers for storing data values. They have a name and they hold a value.</p>
+          
+        <p>Every variable has a name which can consist of letters, numbers, and the underscore character _.</p>
+
+        <p>These are all valid variable names and assignment:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          user_name = "@codedex"
+          user_id = 420
+          verified = False
+          </code>
+        </pre>
+
+        <p>The <code>=</code> equal sign means assigment:</p>
+        <p>We are assigning the string value <code>"@codedex"</code> to the variable <code>user_name</code>.</p>
+        <p>We are assigning the number value <code>420</code> to the variable <code>user_id</code>.</p>
+        <p>We are assigning the Boolean value <code>"False"</code> to the variable <code>verified</code>.</p>
+
+        <p>We can also change the value of a variable, or print it out:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          user_name = "@codedex"
+          user_id = 420
+          verified = False
+
+          user_id = 430
+          print(user_id)    # Output: 430
+          </code>
+        </pre>
+
+      </section> 
+      <br>
+
+      <section class="topic">
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Data Types</h3>
+        <br>
+
+        <p>An integer, or <code>int</code>, is a whole number. It has no decimal point and contains all counting numbers as well as their negative counterparts and the number 0. If you were counting the number of people in a room, the number of jellybeans in a jar, or the number of keys on a keyboard you would likely use an integer.</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          year = 2022
+          age = 30
+          </code>
+        </pre>
+
+        <p>A floating-point number, or a <code>float</code>, is a decimal number. It can be used to represent fractional quantities as well as precise measurements. If you were measuring the length of your bedroom wall, calculating the average test score of a seventh-grade class, or storing a baseball player’s batting average for the 1998 season you would likely use a float.</p>
+        
+        <pre class="line-numbers">
+          <code class="python">
+          pi = 3.14159
+          meal_cost = 12.99
+          </code>
+        </pre>
+
+        <p>
+          Strings is a type for storing text strings. Strings are wrapped in double quotes <code>"</code> <code>"</code> or single quotes <code>'</code> <code>'</code>.
+        </p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          message = "good nite"
+          user = "@sonnynomnom"
+          </code>
+        </pre>
+
+        </section>
+
+      <a class="nes-btn" href="../index.html">Back</a>
+      <button type="button" class="nes-btn is-primary">Complete</button>
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

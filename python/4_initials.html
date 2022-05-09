@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | Initials </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="styles/code.css" rel="stylesheet" />
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-10 col-xs-12">
+        <h2 style="margin-bottom: 0;">
+          <i class="nes-icon coin"></i>
+          <a href="../index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-sm-2 col-xs-12">
+          <h5 style="text-align: right;">        
+            <a href="../about.html" style="color: #212529; line-height: 40px;">
+            About
+          </a>
+        </h5>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px">
+    <main class="main-content">
+
+      <!-- Title -->
+      <section class="topic">
+        <h2 id="about">04. Initials (+15 XP)</h2>
+        <br>
+      </section>
+
+      <!-- Print -->
+      <section class="topic">
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Comments</h3>
+        <br>
+
+        <p>Comments are very important in your programs. They are used to tell you what something does in English, and they also are used to disable parts of your program if you need to remove them temporarily.</p>
+        <p>This is because the Python program ignores comments.</p>
+
+        <p>Here's how you use comments:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          # Printing out a message
+          print("Hi")
+          </code>
+        </pre>
+
+        <p>In the above example, we created a comment using the <code>#</code> symbol. Because it's a comment, the output is still:</p>
+          
+        <pre class="line-numbers">
+          <code class="language-python">
+          Hi
+          </code>
+        </pre>
+        
+        <p>Comments can also be placed more towards end of the line:</p>
+          
+        <pre class="line-numbers">
+          <code class="language-python">
+          print("Hi")   # I'm a comment, too!
+          </code>
+        </pre>
+        <p>Here too, the output would still just be "Hi".</p>
+        <br>
+
+
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
+        <br>
+        
+        <p>Create a <b>initials.py</b> program that displays your initals in block letters.</p>
+
+        <p>First, start your program with a comment that says a fun fact about yourself.</p>
+
+        <p>Then, create your block letters with your initials. For example, my initials are S and L. So my block letters would look like:</p>
+        <pre class="line-numbers">
+          <code class="language-python">
+           SSS   L
+          S   S  L
+          S      L
+           SSS   L 
+              S  L
+          S   S  L
+           SSS   LLLLL
+          </code>
+        </pre>
+        <p><b>Hint:</b> You will need 7 <code>print()</code> functions.</p>
+        <br>
+      </section>
+
+      <a class="nes-btn" href="../index.html">Back</a>
+      <button type="button" class="nes-btn is-primary">Complete</button> 
+      
+      <br><br>
+      <h5>Solution: <a href="https://github.com/sonnynomnom/asdfasdfasdf/blob/main/python/answers/initials.py" target="_blank" rel="noopener">initials.py</a></h5>
+  
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
