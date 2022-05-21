@@ -75,7 +75,7 @@ function calculateCurrentStreak() {
   const lastDate = streakDates.slice(-1)[0];
   // console.log("last date: " + lastDate);
 
-  if ( today.toDateString() === lastDate.toDateString() ) {
+  if ( lastDate &&  today.toDateString() === new Date(lastDate).toDateString() ) {
 
     console.log("Do nothing");
 
