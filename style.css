@@ -115,9 +115,8 @@ a {
 }
 
 .collapsible__content {
-  max-height: 0;
-  overflow: hidden;
   display: none;
+  overflow: hidden;
   transition: all 0.3s;
 }
 
@@ -142,7 +141,6 @@ a {
 .nav__item > a {
   text-decoration: none;
   transition: color 0.3s;
-  display: block;
   padding: 0;
 }
 
@@ -154,6 +152,12 @@ a {
   width: 100%;
   margin: 0;
   padding: 0 0.5rem;
+}
+
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -172,37 +176,12 @@ a {
     margin-left: 20px;
   }
 
-  .header-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   header {
     padding: 20px;
-  }
-
-  .header-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  header {
-    padding: 20px;
-    /* flex-direction: column; */
-  }
-
-  .header-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -214,7 +193,10 @@ a {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 20px 0;
+  }
+
+  .collapsible--expanded .collapsible__content {
+    display: flex;
   }
 
   .codedex--header {
@@ -227,9 +209,8 @@ a {
   }
 
   .nav__toggler {
-    height: 0vh;
+    display: none;
     overflow: hidden;
-    display: inline-block;
   }
 
   .nav__list {
@@ -246,36 +227,6 @@ a {
   .nav__item {
     border: 0;
     padding: 0 0.9rem;
-  }
-
-  .header-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  nav.nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  header {
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-
-  .nav__list {
-    text-align: center;
-    align-items: center;
   }
 
   nav.nav {
