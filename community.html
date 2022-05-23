@@ -1,215 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codédex | Join Community </title>
-  <!-- NES.css -->
-  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <!-- Flexbox Grid -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-  <link href="./style.css" rel="stylesheet" />
-  <link href="./projects.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codédex | Join Community</title>
+    <!-- NES.css -->
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <!-- Flexbox Grid -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+      type="text/css"
+    />
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./projects.css" rel="stylesheet" />
 
-  <script src="./about.js"></script>
-  <style>
-    body {
-      padding-bottom: 90px;
-    }
-    .nes-progress {
-      height: 25px;
-    }
-  </style>
-  
-  <!-- Plausible -->
-  <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
+    <script src="./about.js"></script>
+    <style>
+      body {
+        padding-bottom: 90px;
+      }
+      .nes-progress {
+        height: 25px;
+      }
+    </style>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-</head>
-<body>
-  <!-- Header -->
-  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom:40px'>
+    <!-- Plausible -->
+    <script
+      defer
+      data-domain="codedex.io"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="container header-line">
+      <nav class="nav collapsible">
+        <div class="header-mobile">
+          <h2 class="codedex--header">
+            <i class="nes-icon coin"></i>
+            <a class="root-anchor" href="#">Codédex</a>
+          </h2>
+          <span class="material-symbols-outlined nav__toggler">menu </span>
+        </div>
+
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="./projects.html"> Projects</a></li>
+          <li class="nav__item"><a href="./about.html"> About </a></li>
+          <li class="nav__item">
+            <a href="./community.html"
+              ><button type="button" class="nes-btn is-error">
+                Join Community
+              </button></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container" style="margin: 150px auto 50px;">
+      <div class="row">
+        <div class="nes-field col-md-12 col-sm-12 col-xs-12">
+          <h3 style="text-align: center">
+            Join the Community and lvl up with friends!
+          </h3>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 40px">
+          <div
+            class="nes-container with-title"
+            style="height: 540px; border-color: rgb(249, 228, 0)"
+          >
+            <h3 class="title">Tier 1</h3>
+            <img
+              src="./images/evolution1.png"
+              style="
+                height: 70px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <br />
 
-    <div class="row">
-      <div class="col-sm-7 col-xs-12">
-        <h2 style="margin-bottom: 0; line-height: 55px;">
-          <i class="nes-icon coin"></i>
-          <a href="index.html" style="color: #212529;">
-            Codédex
-          </a>
-        </h2>
-      </div>
+            <h3 style="text-align: center">Codédex</h3>
+            <p style="text-align: center">Free</p>
+            <br />
 
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                checked
+                disabled="true"
+              />
+              <span>&nbsp;Courses</span>
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                checked
+                disabled="true"
+              />
+              <span>&nbsp;Projects</span>
+            </label>
 
-      <div class="col-sm-5 col-xs-12">
-        <div class="row">
-          <h5 style="margin-right: 30px; margin-bottom: 0;">        
-            <a href="./projects.html" style="color: #212529; line-height: 55px;">
-            Projects
-            </a>
-          </h5>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+              />
+              <span style="color: rgb(165, 163, 163)"
+                >&nbsp;Slack Community</span
+              >
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+              />
+              <span style="color: rgb(165, 163, 163)"
+                >&nbsp;Guest Speakers</span
+              >
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+              />
+              <span style="color: rgb(165, 163, 163)"> &nbsp;Office Hours</span>
+            </label>
+          </div>
+        </div>
 
-          <h5 style="margin-right: 30px; margin-bottom: 0;">        
-            <a href="./about.html" style="color: #212529; line-height: 55px;">
-            About
-            </a>
-          </h5>
+        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 40px">
+          <div
+            class="nes-container with-title"
+            style="height: 540px; border-color: rgb(249, 199, 0)"
+          >
+            <h3 class="title">Tier 2</h3>
 
-          <button type="button" class="nes-btn is-error">Join Community</button>
+            <img
+              src="./images/evolution2.png"
+              style="
+                height: 70px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <br />
 
+            <h3 style="text-align: center">Codédex Club</h3>
+            <p style="text-align: center">$9.99 / month</p>
+            <br />
+
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                checked
+                disabled="true"
+              />
+              <span>&nbsp;Courses</span>
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                checked
+                disabled="true"
+              />
+              <span>&nbsp;Projects</span>
+            </label>
+
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+                checked
+              />
+              <span>&nbsp;Slack Community</span>
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+                checked
+              />
+              <span>&nbsp;Guest Speakers</span>
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+                checked
+              />
+              <span>&nbsp;Office Hours</span>
+            </label>
+
+            <br />
+            <br />
+            <br />
+            <button
+              type="button"
+              class="nes-btn is-primary"
+              style="margin: 0 auto; display: block"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 40px">
+          <div
+            class="nes-container with-title"
+            style="height: 540px; border-color: rgb(249, 166, 0)"
+          >
+            <h3 class="title">Bonus</h3>
+
+            <img
+              src="./images/evolution3.png"
+              style="
+                height: 70px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <br />
+            <h3 style="text-align: center">Workshops</h3>
+            <p style="text-align: center">$249</p>
+            <br />
+            <p>2-week-long intimate workshops in a group</p>
+
+            <br />
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+                checked
+              />
+              <span>&nbsp;Live Lectures</span>
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+                checked
+              />
+              <span>&nbsp;1:1 Meetings</span>
+            </label>
+
+            <!-- <p>Extra resources such as lecture PDFs and class handouts.</p> -->
+
+            <br />
+            <br />
+            <button
+              type="button"
+              class="nes-btn is-primary"
+              style="margin: 0 auto; display: block; top: 30px"
+            >
+              Next Cohort
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
 
-  <div class="container" style="margin-bottom: 50px">
-
-    <div class="row">
-      <div class="nes-field col-md-12 col-sm-12 col-xs-12">
-        <h3 style="text-align: center">Join the Community and lvl up with friends!</h3>
+    <div class="container" style="margin-bottom: 50px">
+      <div class="row">
+        <p>What people are saying:</p>
       </div>
+      <br />
+      <br />
+      <marquee
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"User
+        Testimonial 2 go here." Jian-Yang, Shanghai 🇨🇳</marquee
+      >
+      <br />
+      <br />
+      <marquee>"User Testimonial 1 go here." Richard Hendricks, SF 🇺🇸</marquee>
+      <br />
+      <br />
+      <marquee
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"User
+        Testimonial 3 go here." Laurie Bream, Mecca 🇸🇦</marquee
+      >
     </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
-
-        <div class="nes-container with-title" style="height: 540px; border-color:rgb(249, 228, 0)">
-          <h3 class="title">
-            Tier 1
-          </h3>
-          <img src="./images/evolution1.png" style="height:70px; display: block; margin-left: auto; margin-right: auto;"/>
-          <br>
-
-          <h3 style="text-align: center;">Codédex</h3>
-          <p style="text-align: center;">Free</p>
-          <br>
-
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" checked disabled="true"/>
-            <span>&nbsp;Courses</span>
-          </label>
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" checked disabled="true"/>
-            <span>&nbsp;Projects</span>
-          </label>
-
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" disabled="true"/>
-            <span style="color: rgb(165, 163, 163)">&nbsp;Slack Community</span>
-          </label>
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" disabled="true"/>
-            <span style="color: rgb(165, 163, 163)">&nbsp;Guest Speakers</span>
-          </label>
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" disabled="true"/>
-            <span style="color: rgb(165, 163, 163)"> &nbsp;Office Hours</span>
-          </label>
-    
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 40px">
-        <div class="nes-container with-title" style="height: 540px; border-color:rgb(249, 199, 0)">
-          <h3 class="title" >
-            Tier 2
-          </h3>
-
-          <img src="./images/evolution2.png" style="height:70px; display: block; margin-left: auto; margin-right: auto;"/>
-          <br>
-
-          <h3 style="text-align: center;">Codédex Club</h3>
-          <p style="text-align: center;">$9.99 / month</p>
-          <br>
-
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" checked disabled="true"/>
-            <span>&nbsp;Courses</span>
-          </label>
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" checked disabled="true"/>
-            <span>&nbsp;Projects</span>
-          </label>
-
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" disabled="true" checked/>
-            <span>&nbsp;Slack Community</span>
-          </label>
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" disabled="true" checked/>
-            <span>&nbsp;Guest Speakers</span>
-          </label>
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" disabled="true" checked/>
-            <span>&nbsp;Office Hours</span>
-          </label>
-          
-          <br>
-          <br>
-          <br>
-          <button type="button" class="nes-btn is-primary" style="margin:0 auto; display:block;">Sign Up</button>
-        </div>
-
-      </div>
-
-      <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 40px">
-        <div class="nes-container with-title" style="height: 540px; border-color:rgb(249, 166, 0)">
-          <h3 class="title">Bonus</h3>
-
-          <img src="./images/evolution3.png" style="height:70px; display: block; margin-left: auto; margin-right: auto;"/>
-          <br>
-          <h3 style="text-align: center;">Workshops</h3>
-          <p style="text-align: center;">$249</p>
-          <br>
-          <p>2-week-long intimate workshops in a group</p>
-
-          <br>
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" disabled="true" checked/>
-            <span>&nbsp;Live Lectures</span>
-          </label>
-          <label>
-            <input id="one" type="checkbox" class="nes-checkbox" disabled="true" checked/>
-            <span>&nbsp;1:1 Meetings</span>
-          </label>
-
-          <!-- <p>Extra resources such as lecture PDFs and class handouts.</p> -->
-
-          <br>
-          <br>
-          <button type="button" class="nes-btn is-primary" style="margin:0 auto; display:block; top: 30px;">Next Cohort</button>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="container" style="margin-bottom: 50px">
-
-    <div class="row" >
-      <p>What people are saying:</p>
-    </div>
-    <br>
-    <br>
-    <marquee>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"User Testimonial 2 go here." Jian-Yang, Shanghai 🇨🇳</marquee>
-    <br>
-    <br>
-    <marquee>"User Testimonial 1 go here." Richard Hendricks, SF 🇺🇸</marquee>
-    <br>
-    <br>
-    <marquee>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"User Testimonial 3 go here." Laurie Bream, Mecca 🇸🇦</marquee>
-  </div>
-
-  <!-- <div class="nes-container is-dark">
+    <!-- <div class="nes-container is-dark">
     <div class="row">
 
       <div class="col-xs-2">
@@ -225,14 +347,13 @@
     </div>
   </div> -->
 
-
-  <div class="container" style="margin-top: 50px; font-size: 60%">
-    <div class="row">
-      <div class="col-xs-12" style="text-align: center; color: #ccc;">
-        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+    <div class="container" style="margin-top: 50px; font-size: 60%">
+      <div class="row">
+        <div class="col-xs-12" style="text-align: center; color: #ccc">
+          Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+        </div>
       </div>
     </div>
-  </div>
-
-</body>
+    <script src="collapse.js"></script>
+  </body>
 </html>
