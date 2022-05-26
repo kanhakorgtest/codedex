@@ -160,11 +160,37 @@ a {
   justify-content: space-between;
 }
 
+.hero-container-root {
+  margin: 95px auto 100px;
+}
+
+.hero-heading {
+  margin: auto;
+  position: relative;
+  top: 15%;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  text-shadow: 0px 6px #0026ff;
+}
+
+.hero-container {
+  position: relative;
+  background-image: url('./images/header.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   header {
     padding: 20px;
     flex-direction: column;
+  }
+
+  .hero-heading {
+    font-size: 30px;
   }
 
   .codedex--header {
@@ -174,6 +200,20 @@ a {
 
   .root-anchor {
     margin-left: 20px;
+  }
+
+  .row-with-computer-and-bubble {
+    display: flex;
+    align-items: flex-end;
+    bottom: -170px !important;
+  }
+
+  .hero-container {
+    background-size: auto;
+  }
+
+  .hero-container-root {
+    margin: 95px auto 225px;
   }
 
 }
@@ -202,6 +242,10 @@ a {
   .codedex--header {
     display: flex;
     align-items: center;
+  }
+
+  .material-symbols-outlined {
+    display: none !important;
   }
 
   .root-anchor {
@@ -234,5 +278,12 @@ a {
     align-items: center;
     width: 100%;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .computer-image {
+    margin-left: 35px;
+    margin-right: 5px
   }
 }
