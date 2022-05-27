@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
   <link href="./style.css" rel="stylesheet" />
   <link href="styles/code.css" rel="stylesheet" />
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <style>
     body {
@@ -91,7 +94,9 @@
 
         <p>It is computed by taking the individual's weight (mass) in kilograms and dividing it by the square of their height in meters.</p>
 
-        <p>bmi = mass / height²</p>
+        <p>
+          \[bmi = {mass \over height²}\]
+        </p>
 
         <p>Create a <strong>bmi.py</strong> program that calculates your own BMI.</p>
         <br>
