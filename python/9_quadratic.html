@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
   <link href="./style.css" rel="stylesheet" />
   <link href="styles/code.css" rel="stylesheet" />
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <style>
     body {
@@ -66,7 +69,7 @@
         <h3 id="installation"><a href="#installation">#</a>&nbsp;User Input</h3>
         <br>
 
-        <p>When we are writing a program, sometimes we want the user to type in something</p>
+        <p>When we are writing a program, sometimes we want the user to type in something.</p>
 
         <p>Python uses the <code>input()</code> method to get user input.</p>
 
@@ -78,8 +81,28 @@
             </code>
           </pre>
 
-          <p>The output will say "Enter your user name:" and the user can type in something, hit <kbd>enter</kbd> and whatever the user typed gets stored into <code>username</code>.</p>
+        <p>The output will say "Enter your user name:" and the user can type in something, hit <kbd>enter</kbd> and whatever the user typed gets stored into <code>username</code>.</p>
+        <p>So here, suppose we type in @codedex.io and press <kbd>enter</kbd>, this will output:</p>
 
+          <pre class="line-numbers">
+            <code class="python">
+            @codedex.io
+            </code>
+          </pre>
+          
+        <p>This works great for text strings. But what about when we want to get a number from a user?</p>
+
+        <p>In that case, we would need to wrap an <code>int()</code> around the <code>input()</code> to convert the text string into a number:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          age = int(input("What's your age:"))
+
+          print(age)
+          </code>
+        </pre>
+
+        <p>Now that the user types 21 and press <kbd>enter</kbd>, the <code>age</code> variable will be an integer 21, and not a text string "21".</p>
       </section>
       <br>
 
@@ -88,14 +111,17 @@
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
                 
-        <p>In algebra, a <a href="https://en.wikipedia.org/wiki/Quadratic_formula" target="_blank">quadratic equation</a> is an equation having the form:</p>
+        <p>If you slept through your algebra class, a <a href="https://en.wikipedia.org/wiki/Quadratic_formula" target="_blank">quadratic equation</a> is an equation having the form:</p>
 
-        <p>ax² + bx + c = 0</p>
+        <p>\[ax² + bx + c = 0\]</p>
           
-        <p>The corresponding x values are the x-intercepts of the graph, while a, b, and c are constants.</p>
+        <p>The \(x\) values are the x-intercepts of the graph, while \(a\), \(b\), and \(c\) are constants.</p>
           
-        <p>Create a <b>quadratic.py</b> program that solves the quadratic equation for the x's:</p>
+        <p>Create a <b>quadratic.py</b> program that solves the quadratic equation by finding the two \(x\)'s:</p>
 
+        <p>
+          \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}\]
+        </p>
         
         <br>
       </section>
