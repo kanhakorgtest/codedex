@@ -77,12 +77,23 @@
         height: 30px;
       }
     </style>
+    
     <!-- Plausible -->
     <script
       defer
       data-domain="codedex.io"
       src="https://plausible.io/js/plausible.js"
     ></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKGQLWZF4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MLKGQLWZF4');
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
