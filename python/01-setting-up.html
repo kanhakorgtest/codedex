@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
   <link href="./style.css" rel="stylesheet" />
   <link href="styles/code.css" rel="stylesheet" />
-
-
+  
   <style>
     body {
       padding-bottom: 90px;
@@ -23,6 +22,7 @@
       height: 25px;
     }
   </style>
+
   <!-- Plausible -->
   <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
   
@@ -35,6 +35,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -97,13 +100,15 @@
 
         <p>Python is also super versatile and is heavily used in:</p>
         <ul>
-          <li>Data Analysis</li>
-          <li>Data Visualization</li>
-          <li>Machine Learning</li>
-          <li>Natural Language Processing</li>
-          <li>Game Development</li>
-          <li>Web Scraping</li>
-          <li>And more!</li>
+          <li>Data Analysis</li><br>
+          <li>Data Visualization</li><br>
+          <li>Machine Learning</li><br>
+          <li>Natural Language Processing</li><br>
+          <li>Game Development</li><br>
+          <li>Web Scraping</li><br>
+          <li>Web Development</li><br>
+          <li>Finance</li><br>
+          <li>And more!</li><br>
         </ul>
         <!-- </ul> data analysis, data visualization, machine learning, natural language processing, web scraping, web development, game development, and more! -->
         
@@ -118,7 +123,7 @@
           <li><a href="https://code.visualstudio.com/" target="_blank">Download Visual Studio Code</a> to your computer, whether it's a Mac or a PC.</li><br>
           <li>Watch this quick 5 min video: <a href="https://youtu.be/S320N3sxinE" target="_target">Get Started with Visual Studio Code</a>.</li><br>
           <li>Create a new folder in your desktop and name it <strong>codedex</strong>.</li><br>
-          <li>Inside the <strong>codedex</strong> folder, create an empty file and name it <strong>hello_world.py</strong>.</li><br>
+          <li>And that's all! We will use the folder in the next task.</li><br>
         </ol>
         
         <p>You are now ready for the journey ahead.</p>
@@ -128,7 +133,7 @@
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
 
   </div>
 
