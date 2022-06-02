@@ -38,6 +38,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -76,44 +79,21 @@
 
       <!-- Congrats -->
       <section class="topic">
-        <h3 id="installation"><a href="#installation">#</a>&nbsp;User Input</h3>
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Congrats!</h3>
         <br>
 
-        <p>When we are writing a program, sometimes we want the user to type in something.</p>
+        <p>Here's a recap of everything we learned in this chapter:</p>
 
-        <p>Python uses the <code>input()</code> method to get user input.</p>
+        <ul>
+          <li>Data types: <code>int</code>, <code>float</code>, <code>string</code>.</li>
+          <li>Arithmetic operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>.</li>
+          <li>The <code>%</code> modulo finds the remainder.</li>
+          <li>The <code>**</code> exponention find the exponent.</li>
+          <li>The <code>input()</code> method is used to get user input.</li>
+          <li>The <code>int()</code> method converts a value into an integer number.</li>
+        </ul>
 
-          <pre class="line-numbers">
-            <code class="python">
-            username = input("Enter your user name:")
-
-            print(username)
-            </code>
-          </pre>
-
-        <p>The output will say "Enter your user name:" and the user can type in something, hit <kbd>enter</kbd> and whatever the user typed gets stored into <code>username</code>.</p>
-        <p>So here, suppose we type in @codedex.io and press <kbd>enter</kbd>, this will output:</p>
-
-          <pre class="line-numbers">
-            <code class="python">
-            @codedex.io
-            </code>
-          </pre>
-          
-        <p>This works great for text strings. But what about when we want to get a number from a user?</p>
-
-        <p>In that case, we would need to wrap an <code>int()</code> around the <code>input()</code> to convert the text string into a number:</p>
-
-        <pre class="line-numbers">
-          <code class="python">
-          age = int(input("What's your age:"))
-
-          print(age)
-          </code>
-        </pre>
-
-        <p>Now that the user types 21 and press <kbd>enter</kbd>, the <code>age</code> variable will be an integer 21, and not a text string "21".</p>
-      </section>
+        </section>
       <br>
 
       <!-- Instructions -->
@@ -121,30 +101,49 @@
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
                 
-        <p>We just got back from a trip from Asia, specifically China, Japan, and Korea. When we got back we have some left over cash money:</p>
+        <p>Here's the final project of the chapter!</p>
+        <p>We just got back from a trip from Asia, specifically China, Japan, and South Korea. When we got back we have some leftover cash:</p>
 
-        <li>
-          <ul>Chinese Yuan</ul>
-          <ul>Japnese</ul>
-          <ul>Chinese Yuan</ul>
-        </li>
-          
-        <p>The \(x\) values are the x-intercepts of the graph, while \(a\), \(b\), and \(c\) are constants.</p>
-          
-        <p>Create a <b>quadratic.py</b> program that solves the quadratic equation by finding the two \(x\)'s:</p>
+        <ul>
+          <li>🇨🇳 Chinese yuan</li>
+          <li>🇯🇵 Japanese yen</li>
+          <li>🇰🇷 South Korean won</li>
+        </ul>
+                    
+        <p>Create a <b>currency.py</b> program that asks the user for the amount they have in yuan, yen, and won and calculates the total in USD.</p>
 
-        <p>
-          \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}\]
-        </p>
-        
-        <br>
+        <p>Make sure to Google the current exchange rates!</p>
+
+        <p>The program should look like:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          What do you have left in yuan? 560
+          What do you have left in yen? 2455
+          What do you have left in won? 3280
+
+          You have a total of $105.5275 in USD.
+          </code>
+        </pre>
+
+        <p><b>Bonus</b>: If you are able to complete this problem and you are a tryhard like me, go back to your code and try to change it into something else (crypto exchange, ).</p>
+        <p>Click "Code Review" and post a screenshot of your code to Twitter and then go to <a href="https://twitter.com/search?q=%23CodedexCurrency&src=typed_query" target="_blank">#CodedexCurrency</a> to review two other people's work. Be supportive of your fellow coders!</p><br>
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+
+      <a class="twitter-share-button"
+      href="https://twitter.com/intent/tweet?text=Currency+💵&hashtags=CodedexCurrency+@codedex_io">
+        <label class="nes-btn">
+          <span>Code Review 📝</span>
+          <!-- <input type="file"> for potential later use -->
+        </label>
+      </a>
+
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       <br>
       <br>
-      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/2-variables/quadratic.py" target="_blank" rel="noopener">quadratic.py</a></h5>
+      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/2-variables/currency.py" target="_blank" rel="noopener">currency.py</a></h5>
 
   </div>
 
