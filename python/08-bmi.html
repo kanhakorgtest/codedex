@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codédex | Coin Flip </title>
+  <title>Codédex | BMI </title>
   <!-- NES.css -->
   <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <!-- Google Font -->
@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
   <link href="./style.css" rel="stylesheet" />
   <link href="styles/code.css" rel="stylesheet" />
-
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <style>
     body {
@@ -26,6 +28,16 @@
 
   <!-- Plausible -->
   <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKGQLWZF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLKGQLWZF4');
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -58,56 +70,45 @@
 
       <!-- Title -->
       <section class="topic">
-        <h2 id="about">11. Coin Flip (+10 XP)</h2>
+        <h2 id="about">08. BMI (+10 XP)</h2>
         <br>
       </section>
 
-      <!-- Control Flow -->
+      <!-- Exponention -->
       <section class="topic">
-        <h3 id="installation"><a href="#print">#</a>&nbsp;Control Flow</h3>
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Exponention</h3>
         <br>
 
-        <p>Every program we’ve seen so far has only had one possible path of execution — they all execute line by line, from top to bottom. And every time you run one of those programs, it gives you the same exact result. But it’s the twenty-first century, and we like options!</p>
+        <p>
+          Python can also perform exponentiation. In written math, you might see an exponent as a superscript number, but typing superscript numbers isn’t always easy on modern keyboards. Since this operation is so related to multiplication, we use the notation <code>**</code>.</p>
 
-        <p>In the "Control Flow" section, we will explore how programs make decisions by evaluating conditions and introduce logic into our code!</p>
-        <br>
-        
+          <pre class="line-numbers">
+            <code class="python">
+            score = 2 ** 2      # score is 4
+            score = 2 ** 3      # score is now 8
+            score = 2 ** 4      # score is now 16
+            score = 2 ** 5      # score is now 32
+  
+            print(score)        # Output: 32
+            </code>
+          </pre>
+      </section>
+      <br>
+
+      <!-- Instructions -->
+      <section class="topic">
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
-        
-        <img src="../images/pixel_coin_flip.gif" width="60"/>
-        <br>
-        <br>
+                
+        <p>The body mass index (BMI) is commonly used by health and nutrition professionals to estimate human body fat in populations.</p>
 
-        <p>Before we dive deep into <code>if</code> statement, let's do a demo using a coin flip!</p>
+        <p>It is computed by taking the individual's weight (mass) in kilograms and dividing it by the square of their height in meters.</p>
 
-        <p>Create a <strong>coin_flip.py</strong> program and type in the following:</p>
+        <p>
+          \[bmi = {mass \over height²}\]
+        </p>
 
-        <pre class="line-numbers">
-          <code class="python">
-          import random
-
-          num = random.randint(0, 1)
-             
-          if num > 0.5: 
-            print("Heads")
-          else:
-            print("Tails")  
-          </code>
-        </pre>
-
-        <p>This program simulates a coin toss:</p>
-        <ul>
-          <li>50% of the time, it's Heads.</li>
-          <li>50% of the time, it's Tails.</li>
-        </ul>
-
-
-        <p>Run the program 5 times to see the <code>if</code>/<code>else</code> statement in action!</p>
-
-        <p>How many times did it go Heads?</p>
-        <br>
-        <br>
+        <p>Create a <strong>bmi.py</strong> program that calculates your own BMI.</p>
         <br>
       </section>
 
@@ -115,7 +116,7 @@
       <button type="button" class="nes-btn is-primary">Complete</button>
       <br>
       <br>
-      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/coin_flip.py" target="_blank" rel="noopener">coin_flip.py</a></h5>
+      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/2-variables/bmi.py" target="_blank" rel="noopener">bmi.py</a></h5>
 
   </div>
 

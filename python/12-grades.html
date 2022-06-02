@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codédex | Fizz Buzz </title>
+  <title>Codédex | Grades </title>
   <!-- NES.css -->
   <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <!-- Google Font -->
@@ -25,6 +25,16 @@
 
   <!-- Plausible -->
   <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKGQLWZF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLKGQLWZF4');
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -57,90 +67,75 @@
 
       <!-- Title -->
       <section class="topic">
-        <h2 id="about">20. Fizz Buzz (+25 XP)</h2>
+        <h2 id="about">12. Grades (+15 XP)</h2>
         <br>
       </section>
-      
-      <!-- Loop -->
+
+      <!-- If -->
       <section class="topic">
-        <h3 id="installation"><a href="#print">#</a>&nbsp;Congrats!</h3>
+        <h3 id="installation"><a href="#print">#</a>&nbsp;If Statement</h3>
+        <br>
+        
+        <p>An <code>if</code> statement is used to test a condition for truth and execute the code if it is <code>True</code>:
+        
+          <pre class="line-numbers">
+          <code class="python">
+            if condition:
+              # code inside
+          </code>
+        </pre>
+
+        <p>For example, if variable <code>grade</code> is greater than 60:</p>
+        <pre class="line-numbers">
+          <code class="python">
+          if grade > 60:
+            print("You passed!")
+          </code>
+        </pre>
+
+        <p><b>Note:</b> The code "inside" must be indented (preferabbly 2 spaces).</p>
         <br>
 
-        <p>Here's a refresher on what we went over.</p>
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Else</h3>
+        <br>
+
+        <p>An <code>else</code> clause can be optionally added to an <code>if</code> statement.
         
-        <p>The <code>while</code> loop:</p>
+        <ol>
+          <li>If the condition evaluates to <code>True</code>, code in the <code>if</code> part is executed.</li>
+          <li>If the condition evaluates to <code>False</code>, code in the <code>else</code> part is executed.</li>
+        </ol>
 
         <pre class="line-numbers">
           <code class="python">
-          while coffee < 1:
-            print("tired")
+          if grade > 60:
+            print("You passed.")
+          else:
+            print("You failed.")
           </code>
         </pre>
-        <p>The <code>for</code> loop and the <code>range()</code> function:</p>
-
-        <pre class="line-numbers">
-          <code class="python">
-          for i in range(10):
-            print(i)
-          </code>
-        </pre>
-
+  
         <br>
           
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
         
-        <p><a href="https://en.wikipedia.org/wiki/Fizz_buzz" target="_blank">Fizz Buzz</a> is a classic developer interview question that is asked/referenced so often for so long, it is almost a cliché!</p>
+        <p>Holy moly, because the whole class's average was low on the test, the teacher just added in a curve for the test grades!</p> 
 
-        <p>Though this challenge will appear very simplistic to those with some coding experience, it is designed to weed out 99.5% programming job candidates who cannot creatively use their coding knowledge to solve simple problems.</p>
-
-        <p>Want to give it a shot?</p>
-        </p>
-        <p>Create a <b>fizzbuzz.py</b> program that outputs numbers from 1 to 100. Here's the caveat:</p>
-
+        <p>Create a <strong>grades.py</strong> program and use an <code>if</code>/<code>else</code> for the following:</p>
         <ul>
-          <li>For multiples of 3, print "Fizz" instead of the number.</li>
-          <li>For multiples of 5, print "Buzz" instead of the number.</li>
-          <li>Here's the hard part: For multiples of 3 and 5, print "FizzBuzz".</li>
-        </li>
+          <li>If grade is greater than or equal to 55, then print "You passed."</li>
+          <li>Else, print "You failed."</li>
         </ul>
 
-
-        <section class="message -left">
-          <div class="nes-balloon from-left">
-            1<br>
-            2<br>
-            Fizz<br>
-            4<br>
-            Buzz<br>
-            Fizz<br>
-            7<br>
-            8<br>
-            Fizz<br>
-            Buzz<br>
-            11<br>
-            Fizz<br>
-            13<br>
-            14<br>
-            FizzBuzz<br>
-            ...<br>
-            98<br>
-            Fizz<br>
-            Buzz<br>
-          </div>
-        </section>
-
         <br>
-
-        <p><b>Hint:</b> Modulo <code>%</code> can be used to find whether something is the multiple of something else.</p>
       </section>
-      <br>
 
       <a class="nes-btn" href="../index.html">Back</a>
       <button type="button" class="nes-btn is-primary">Complete</button>
       <br>
       <br>
-      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/4-loops/fizzbuzz.py" target="_blank" rel="noopener">fizzbuzz.py</a></h5>
+      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/grades.py" target="_blank" rel="noopener">grades.py</a></h5>
 
   </div>
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codédex | Quadratic Formula </title>
+  <title>Codédex | Detention </title>
   <!-- NES.css -->
   <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <!-- Google Font -->
@@ -22,9 +22,19 @@
       height: 25px;
     }
   </style>
+
+  <!-- Plausible -->
+  <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
   
-   <!-- Plausible -->
-   <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKGQLWZF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLKGQLWZF4');
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -57,46 +67,49 @@
 
       <!-- Title -->
       <section class="topic">
-        <h2 id="about">09. Quadratic Formula (+15 XP)</h2>
+        <h2 id="about">18. Detention (+15 XP)</h2>
         <br>
       </section>
 
-      <!-- User Input -->
+      <!-- Loop -->
       <section class="topic">
-        <h3 id="installation"><a href="#installation">#</a>&nbsp;User Input</h3>
+        <h3 id="installation"><a href="#print">#</a>&nbsp;range()</h3>
         <br>
 
-        <p>When we are writing a program, sometimes we want the user to type in something</p>
+        <p>To loop through a set of code a specified number of times, we can use the <code>range()</code> function. </p>
+        
+        <p>The <code>range()</code> function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+          
+        <pre class="line-numbers">
+          <code class="python">
+          for x in range(6):
+            print(x)
+          </code>
+        </pre>
 
-        <p>Python uses the <code>input()</code> method to get user input.</p>
+        <p>This will output:</p>
 
-          <pre class="line-numbers">
-            <code class="python">
-            username = input("Enter your user name:")
+        <pre class="line-numbers">
+          <code class="python">
+          0
+          1
+          2
+          3
+          4
+          5
+          </code>
+        </pre>
 
-            print(username)
-            </code>
-          </pre>
-
-          <p>The output will say "Enter your user name:" and the user can type in something, hit <kbd>enter</kbd> and whatever the user typed gets stored into <code>username</code>.</p>
-
-      </section>
-      <br>
-
-      <!-- Instructions -->
-      <section class="topic">
+  
+        <br>
+          
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
-                
-        <p>In algebra, a <a href="https://en.wikipedia.org/wiki/Quadratic_formula" target="_blank">quadratic equation</a> is an equation having the form:</p>
-
-        <p>ax² + bx + c = 0</p>
-          
-        <p>The corresponding x values are the x-intercepts of the graph, while a, b, and c are constants.</p>
-          
-        <p>Create a <b>quadratic.py</b> program that solves the quadratic equation for the x's:</p>
-
         
+        <p>Suppose you are in detention and the teacher wants you to write on the board "I will not throw airplanes in class" 100 times.</p>
+
+        <p>Create a <strong>detention.py</strong> program and use a <code>for</code> loop and a <code>range()</code> function to do this with code.</p>
+
         <br>
       </section>
 
@@ -104,7 +117,7 @@
       <button type="button" class="nes-btn is-primary">Complete</button>
       <br>
       <br>
-      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/2-variables/quadratic.py" target="_blank" rel="noopener">quadratic.py</a></h5>
+      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/4-loops/detention.py" target="_blank" rel="noopener">detention.py</a></h5>
 
   </div>
 

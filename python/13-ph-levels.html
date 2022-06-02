@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codédex | Initials </title>
+  <title>Codédex | pH Levels </title>
   <!-- NES.css -->
   <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <!-- Google Font -->
@@ -14,6 +14,7 @@
   <link href="./style.css" rel="stylesheet" />
   <link href="styles/code.css" rel="stylesheet" />
 
+
   <style>
     body {
       padding-bottom: 90px;
@@ -22,9 +23,19 @@
       height: 25px;
     }
   </style>
-  
+
   <!-- Plausible -->
   <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKGQLWZF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLKGQLWZF4');
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -57,69 +68,63 @@
 
       <!-- Title -->
       <section class="topic">
-        <h2 id="about">04. Initials (+15 XP)</h2>
+        <h2 id="about">13. pH Levels (+15 XP)</h2>
         <br>
       </section>
 
       <!-- Print -->
       <section class="topic">
-        <h3 id="installation"><a href="#print">#</a>&nbsp;Comments</h3>
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Relational Operators</h3>
         <br>
+        <p>When writing conditions, sometimes we need to use different types of operators to compare values. These operators are called <b>relational operators</b>.</p>
 
-        <p>Comments are very important in our programs. They are used to document what a piece of code does in plain English, and they are also used to disable a part of the program that we want remove temporarily.</p>
-        <p>This is because the Python program ignores comments.</p>
-
-        <p>Here's how we use comments:</p>
+        <ul>
+          <li><code>==</code> equal to</li>
+          <li><code>!=</code> not equal to</li>
+          <li><code>></code> greater than</li>
+          <li><code><</code> less than</li>
+          <li><code>>=</code> greater than or equal to</li>
+          <li><code><=</code> less thanb or equal to</li>
+        </ul>
+        <br>
+        
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Elif</h3>
+        <br>
+        
+        <p>One or more <code>elif</code>else if statements can be optionally added in between the <code>if</code> and <code>else</code> to provide additional condition(s) to check.</p>
 
         <pre class="line-numbers">
           <code class="python">
-          # Printing out a message
-          print("Hi")
+          if grade > 90:
+            print("A")
+          elif grade > 80:
+            print("B")
+          elif grade > 70:
+            print("C")
+          elif grade > 60:
+            print("D")
+          else:
+            print("F")
           </code>
-        </pre>
-
-        <p>In the above example, we created a comment using the <code>#</code> symbol. Because line 1 is a comment, all of line 1 is ignored. The program continues on to line 2 and the output is simply:</p>
-          
-        <pre class="line-numbers">
-          <code class="language-python">
-          Hi
-          </code>
-        </pre>
+        </pre>   
         
-        <p>Comments can also be placed more towards end of the line:</p>
-          
-        <pre class="line-numbers">
-          <code class="language-python">
-          print("Hi")      # I'm a comment, too!
-          </code>
-        </pre>
-        <p>Here, the output would still just be "Hi".</p>
-        <br>
-
-
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
         
-        <p>Create a <b>initials.py</b> program that displays your initals in <a href="https://www.programmingbydoing.com/a/examples/BigLetters2.png" target="_blank">block letters</a>.</p>
+        <p>In chemistry, <a href="https://en.wikipedia.org/wiki/PH" target="_blank">pH</a> is a scale used to specify the acidity or basicity of an aqueous solution.</p>
 
-        <p>First, start your program with a comment that says a fun fact about yourself.</p>
+        <p>Create a <b>ph_levels.py</b> program that checks whether a ph level is basic, acidic, or neutral.</p>
 
-        <p>Then, create your block letters with your initials.</p>
-        
-        <p>For example, if your name is Ada Lovelace, your initials would be A and L and your block letters would look like:</p>
-        
-        <pre class="line-numbers">
-          <code class="language-python">
-            A    L
-           A A   L
-          A   A  L
-          AAAAA  L 
-          A   A  L
-          A   A  L
-          A   A  LLLLL
-          </code>
-        </pre>
-        <p><b>Hint:</b> You will need 7 <code>print()</code> functions.</p>
+        <p>First, create a variable and give a value somewhere between 0 and 14.</p>
+          
+        <p>Write an <code>if</code>, <code>elif</code>, <code>else</code> statement that:</p>
+
+        <ul>
+          <li>If <code>ph</code> is greater than 7, output "Basic".</li>
+          <li>If <code>ph</code> is less than 7, output "Acidic".</li>
+          <li>Else, output "Neutral".</li>
+        </ul>
+
         <br>
       </section>
 
@@ -127,7 +132,7 @@
       <button type="button" class="nes-btn is-primary">Complete</button> 
       
       <br><br>
-      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/1-hello-world/initials.py" target="_blank" rel="noopener">initials.py</a></h5>
+      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/ph_levels.py" target="_blank" rel="noopener">ph_levels.py</a></h5>
   
   </div>
 
