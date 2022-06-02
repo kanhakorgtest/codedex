@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codédex | pH Levels </title>
+  <title>Codédex | Coin Flip </title>
   <!-- NES.css -->
   <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <!-- Google Font -->
@@ -26,6 +26,16 @@
 
   <!-- Plausible -->
   <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKGQLWZF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLKGQLWZF4');
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -58,72 +68,65 @@
 
       <!-- Title -->
       <section class="topic">
-        <h2 id="about">13. pH Levels (+15 XP)</h2>
+        <h2 id="about">11. Coin Flip (+10 XP)</h2>
         <br>
       </section>
 
-      <!-- Print -->
+      <!-- Control Flow -->
       <section class="topic">
-        <h3 id="installation"><a href="#print">#</a>&nbsp;Relational Operators</h3>
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Control Flow</h3>
         <br>
-        <p>When writing conditions, sometimes we need to use different types of operators to compare values. These operators are called <b>relational operators</b>.</p>
 
-        <ul>
-          <li><code>==</code> equal to</li>
-          <li><code>!=</code> not equal to</li>
-          <li><code>></code> greater than</li>
-          <li><code><</code> less than</li>
-          <li><code>>=</code> greater than or equal to</li>
-          <li><code><=</code> less thanb or equal to</li>
-        </ul>
-        <br>
-        
-        <h3 id="installation"><a href="#installation">#</a>&nbsp;Elif</h3>
-        <br>
-        
-        <p>One or more <code>elif</code>else if statements can be optionally added in between the <code>if</code> and <code>else</code> to provide additional condition(s) to check.</p>
+        <p>Every program we’ve seen so far has only had one possible path of execution — they all execute line by line, from top to bottom. And every time you run one of those programs, it gives you the same exact result. But it’s the twenty-first century, and we like options!</p>
 
-        <pre class="line-numbers">
-          <code class="python">
-          if grade > 90:
-            print("A")
-          elif grade > 80:
-            print("B")
-          elif grade > 70:
-            print("C")
-          elif grade > 60:
-            print("D")
-          else:
-            print("F")
-          </code>
-        </pre>   
+        <p>In the "Control Flow" section, we will explore how programs make decisions by evaluating conditions and introduce logic into our code!</p>
+        <br>
         
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
         
-        <p>In chemistry, <a href="https://en.wikipedia.org/wiki/PH" target="_blank">pH</a> is a scale used to specify the acidity or basicity of an aqueous solution.</p>
+        <img src="../images/pixel_coin_flip.gif" width="60"/>
+        <br>
+        <br>
 
-        <p>Create a <b>ph_levels.py</b> program that checks whether a ph level is basic, acidic, or neutral.</p>
+        <p>Before we dive deep into <code>if</code> statement, let's do a demo using a coin flip!</p>
 
-        <p>First, create a variable and give a value somewhere between 0 and 14.</p>
-          
-        <p>Write an <code>if</code>, <code>elif</code>, <code>else</code> statement that:</p>
+        <p>Create a <strong>coin_flip.py</strong> program and type in the following:</p>
 
+        <pre class="line-numbers">
+          <code class="python">
+          import random
+
+          num = random.randint(0, 1)
+             
+          if num > 0.5: 
+            print("Heads")
+          else:
+            print("Tails")  
+          </code>
+        </pre>
+
+        <p>This program simulates a coin toss:</p>
         <ul>
-          <li>If <code>ph</code> is greater than 7, output "Basic".</li>
-          <li>If <code>ph</code> is less than 7, output "Acidic".</li>
-          <li>Else, output "Neutral".</li>
+          <li>50% of the time, it's Heads.</li>
+          <li>50% of the time, it's Tails.</li>
         </ul>
 
+
+        <p>Run the program 5 times to see the <code>if</code>/<code>else</code> statement in action!</p>
+
+        <p>How many times did it go Heads?</p>
+        <br>
+        <br>
         <br>
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button> 
-      
-      <br><br>
-      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/ph_levels.py" target="_blank" rel="noopener">ph_levels.py</a></h5>
-  
+      <button type="button" class="nes-btn is-primary">Complete</button>
+      <br>
+      <br>
+      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/coin_flip.py" target="_blank" rel="noopener">coin_flip.py</a></h5>
+
   </div>
 
   <div class="container" style="margin-top: 50px; font-size: 60%">
