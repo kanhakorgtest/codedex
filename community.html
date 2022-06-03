@@ -45,6 +45,16 @@
       data-domain="codedex.io"
       src="https://plausible.io/js/plausible.js"
     ></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKGQLWZF4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-MLKGQLWZF4');
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -148,7 +158,7 @@
                 disabled="true"
               />
               <span style="color: rgb(165, 163, 163)"
-                >&nbsp;Guest Speakers</span
+                >&nbsp;Weekly Events</span
               >
             </label>
             <label>
@@ -159,6 +169,15 @@
                 disabled="true"
               />
               <span style="color: rgb(165, 163, 163)"> &nbsp;Office Hours</span>
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+              />
+              <span style="color: rgb(165, 163, 163)"> &nbsp;Code Help</span>
             </label>
           </div>
         </div>
@@ -224,7 +243,7 @@
                 disabled="true"
                 checked
               />
-              <span>&nbsp;Guest Speakers</span>
+              <span>&nbsp;Weekly Events</span>
             </label>
             <label>
               <input
@@ -236,6 +255,16 @@
               />
               <span>&nbsp;Office Hours</span>
             </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+                checked
+              />
+              <span>&nbsp;Code Help</span>
+            </label>
 
             <br />
             <br />
@@ -244,7 +273,7 @@
               <button
                 type="button"
                 class="nes-btn is-primary"
-                style="margin: 0 auto; display: block"
+                style="margin: 0 auto; display: block;  top: -11px"
               >
                 Sign Up
               </button>
@@ -272,7 +301,7 @@
             <h3 style="text-align: center">Workshops</h3>
             <p style="text-align: center">$249</p>
             <br />
-            <p>2-week-long intimate workshops in a group</p>
+            <p style="text-align: left;">2-week intensive in an intimate group</p>
 
             <br />
             <label>
@@ -283,7 +312,7 @@
                 disabled="true"
                 checked
               />
-              <span>&nbsp;Live Lectures</span>
+              <span>&nbsp;Group Classes</span>
             </label>
             <label>
               <input
@@ -293,20 +322,32 @@
                 disabled="true"
                 checked
               />
-              <span>&nbsp;1:1 Meetings</span>
+              <span>&nbsp;Personal Coach</span>
+            </label>
+            <label>
+              <input
+                id="one"
+                type="checkbox"
+                class="nes-checkbox"
+                disabled="true"
+                checked
+              />
+              <span>&nbsp;Certificate</span>
             </label>
 
             <!-- <p>Extra resources such as lecture PDFs and class handouts.</p> -->
 
             <br />
             <br />
-            <button
-              type="button"
-              class="nes-btn is-primary"
-              style="margin: 0 auto; display: block; top: 30px"
-            >
-              Coming Soon
-            </button>
+            <a href="https://codedex.gumroad.com/l/intro-to-programming" target="_blank">
+              <button
+                type="button"
+                class="nes-btn is-primary"
+                style="margin: 0 auto; display: block; top: 20px"
+              >
+                June Cohort
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -324,7 +365,7 @@
       >
       <br />
       <br />
-      <marquee>"User Testimonial 1 go here." Richard Hendricks, SF 🇺🇸</marquee>
+      <marquee>"The way you had me thinking about how to solve the challenges was amazing. Now I know how Python works and WOW! I didn't know it was so easy to understand." Wilber Rojas, Medellín, Colombia 🇨🇴</marquee>
       <br />
       <br />
       <marquee

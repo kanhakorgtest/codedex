@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codédex | Currency </title>
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Flexbox Grid -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link href="./style.css" rel="stylesheet" />
+  <link href="styles/code.css" rel="stylesheet" />
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      padding-bottom: 90px;
+    }
+    .nes-progress {
+      height: 25px;
+    }
+  </style>
+  
+  <!-- Plausible -->
+  <script defer data-domain="codedex.io" src="https://plausible.io/js/plausible.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLKGQLWZF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLKGQLWZF4');
+  </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <nav :class="{ sticky: scrollPos > 50 }" style='padding: 20px; border-bottom: 3px solid #ccc; margin-bottom: 60px;'>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-10 col-xs-12">
+        <h2 style="margin-bottom: 0;">
+          <i class="nes-icon coin"></i>
+          <a href="../index.html" style="color: #212529;">
+            Codédex
+          </a>
+        </h2>
+      </div>
+
+      <div class="col-sm-2 col-xs-12">
+          <h5 style="text-align: right;">        
+            <a href="../about.html" style="color: #212529; line-height: 40px;">
+            About
+          </a>
+        </h5>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-bottom: 50px">
+    <main class="main-content">
+
+      <!-- Title -->
+      <section class="topic">
+        <h2 id="about">10. Currency (+20 XP)</h2>
+        <br>
+      </section>
+
+      <!-- Congrats -->
+      <section class="topic">
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Congrats!</h3>
+        <br>
+
+        <p>Here's a recap of everything we learned in this chapter:</p>
+
+        <ul>
+          <li>Data types: <code>int</code>, <code>float</code>, <code>string</code>.</li>
+          <li>Arithmetic operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>.</li>
+          <li>The <code>%</code> modulo finds the remainder.</li>
+          <li>The <code>**</code> exponentiation finds the exponent.</li>
+          <li>The <code>input()</code> method is used to get user input.</li>
+          <li>The <code>int()</code> method converts a value into an integer number.</li>
+        </ul>
+
+        </section>
+      <br>
+
+      <!-- Instructions -->
+      <section class="topic">
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
+        <br>
+                
+        <p>Here's the final project of the chapter!</p>
+        <p>We just got back from a trip to Asia, specifically China, Japan, and South Korea. When we got back we have some leftover cash:</p>
+
+        <ul>
+          <li>🇨🇳 Chinese yuan</li>
+          <li>🇯🇵 Japanese yen</li>
+          <li>🇰🇷 South Korean won</li>
+        </ul>
+                    
+        <p>Create a <b>currency.py</b> program that asks the user for the amount they have in yuan, yen, and won and calculates the total in USD.</p>
+
+        <p>Make sure to Google the current exchange rates!</p>
+
+        <p>The program should look like this:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          What do you have left in yuan? 560
+          What do you have left in yen? 2455
+          What do you have left in won? 3280
+
+          You have a total of $105.5275 in USD.
+          </code>
+        </pre>
+
+        <p><b>Bonus</b>: If you can complete this problem and you are a tryhard like me, go back to your code and try to change it into something else (crypto exchange, measurement conversion, different countries, etc).</p>
+        <p>Click "Code Review" and post a screenshot of your code to Twitter and then go to <a href="https://twitter.com/search?q=%23CodedexCurrency&src=typed_query" target="_blank">#CodedexCurrency</a> to review two other people's work. Be supportive of your fellow coders!</p><br>
+      </section>
+
+      <a class="nes-btn" href="../index.html">Back</a>
+
+      <a class="twitter-share-button"
+      href="https://twitter.com/intent/tweet?text=Currency+💵&hashtags=CodedexCurrency+@codedex_io">
+        <label class="nes-btn">
+          <span>Code Review 📝</span>
+          <!-- <input type="file"> for potential later use -->
+        </label>
+      </a>
+
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
+      <br>
+      <br>
+      <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/2-variables/currency.py" target="_blank" rel="noopener">currency.py</a></h5>
+
+  </div>
+
+  <div class="container" style="margin-top: 50px; font-size: 60%">
+    <div class="row">
+      <div class="col-xs-12" style="text-align: center; color: #ccc;">
+        Made with <i class="nes-icon is-small heart"></i> in Brooklyn, NY
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
