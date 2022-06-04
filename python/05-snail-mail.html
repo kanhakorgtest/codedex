@@ -35,6 +35,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -132,7 +135,7 @@
       </label>
     </a>
   
-    <button type="button" class="nes-btn is-primary">Complete</button>
+    <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
     <br>
     <br>
     <h5>The answer could look something like: <a href="https://github.com/codedex-io/python-101/blob/main/1-hello-world/letter.py" target="_blank" rel="noopener">letter.py</a></h5>
