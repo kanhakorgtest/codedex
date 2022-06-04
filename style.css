@@ -234,8 +234,8 @@ a {
   }
 
   .from-left {
-    min-width: 260px;
-    width: 260px;
+    min-width: 262px;
+    /* width: 260px; */
     height: 176px;
   }
 
@@ -257,8 +257,8 @@ a {
   }
 
   .from-left {
-    min-width: 635px;
-    width: 635px;
+    min-width: 490px;
+    /* width: 490px; */
     height: 104px;
   }
 
@@ -270,6 +270,18 @@ a {
 
   .hero-container-root {
     margin: 95px auto 10px;
+  }
+
+  /* .hero-container {
+    background-size: auto;
+  } */
+}
+
+@media only screen and (min-width: 767px) {
+  .from-left {
+    min-width: 635px;
+    /* width: 635px; */
+    height: 104px;
   }
 }
 
@@ -329,8 +341,8 @@ a {
   }
 
   .from-left {
-    min-width: 800px;
-    width: 800px;
+    min-width: 635px;
+    /* width: 800px; */
   }
 }
 
@@ -341,7 +353,7 @@ a {
   }
 
   .from-left {
-    min-width: 800px;
+    /* min-width: 800px; */
     width: 800px;
     height: 105px;
   }
@@ -357,6 +369,14 @@ a {
   }
 }
 
+@media only screen and (min-width: 1199px) {
+  .from-left {
+    /* min-width: 800px; */
+    width: 850px;
+    height: 105px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .computer-image {
     margin-left: 35px;
@@ -365,7 +385,7 @@ a {
 
   .from-left {
     min-width: 900px;
-    width: 900px;
+    /* width: 900px; */
   }
 
   .hero-container-root {
