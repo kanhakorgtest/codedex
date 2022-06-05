@@ -38,6 +38,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -104,21 +107,33 @@
           </code>
         </pre>
 
-        <p>And take a look at this code that calculates a 20% tip useing parentheses and and a float (decimal number):</p>
+        <p>And take a look at this code that calculates a 20% tip by calculating the total and then multiplying by a float (decimal number):</p>
 
         <pre class="line-numbers">
           <code class="python">
-          cost_pizza = 2.99
-          cost_coke = 0.99
+          pizza = 2.99
+          coke = 0.99
 
-          tip = (cost_pizza + cost_coke) * 0.2
+          total = pizza + coke
+
+          tip = total * 0.2
 
           print(tip) # Output: 0.796
           </code>
         </pre>
 
+        <p>Another way to write this is using parentheses to calculate the total and the tip in one line of code: </p>
+        
+        <pre class="line-numbers">
+          <code class="python">
+            tip = (pizza + coke) * 0.2
+          </code>
+        </pre>
+        
         <p>Now that we’ve learned about the basics of variables and operators, let’s put them to use!</p>
+
       </section>
+
       <br>
 
       <!-- Instructions -->
@@ -126,14 +141,14 @@
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
         
-        <p>Create a <strong>temperature.py</strong> program that converts a temperature from Fahrenheit (F) to Celsius (C).</p>
+        <p>Create a <strong>temperature.py</strong> program that converts a temperature from Fahrenheit (°F) to Celsius (°C).</p>
 
-        <p>Google the current temperature of New York City in Fahrenheit.</p>
+        <p>Google the current temperature of <a href="https://www.google.com/search?q=brooklyn+temperature&hl=en&sxsrf=ALiCzsZGq1UvGOlwLd5J7XYFkbsE4O1tBw%3A1654465218282&source=hp&ei=wiKdYsn9DY2o_Qbf4ouoCA&iflsig=AJiK0e8AAAAAYp0w0qstNiIT3XyCpVYhPeozix1U7UDv&ved=0ahUKEwjJ5oCdo5f4AhUNVN8KHV_xAoUQ4dUDCAk&uact=5&oq=brooklyn+temperature&gs_lcp=Cgdnd3Mtd2l6EAMyCggAEIAEEEYQgAIyCAgAEIAEEMkDMgUIABCABDIKCAAQgAQQhwIQFDIFCAAQgAQyBQgAEIAEMgUIABCABDIKCAAQgAQQhwIQFDIFCAAQgAQyBQgAEIAEOgcIIxDqAhAnOgQIIxAnOgsILhDHARDRAxCRAjoFCAAQkQI6EQguEIAEELEDEIMBEMcBEKMCOgsIABCABBCxAxCDAToICAAQgAQQsQM6DgguEIAEELEDEMcBEKMCOgQIABBDOggIABCxAxCDAToECC4QQzoKCC4QxwEQowIQQzoHCC4QsQMQQzoNCC4QgAQQhwIQsQMQFDoKCAAQsQMQgwEQQzoRCC4QgAQQsQMQgwEQxwEQrwE6DgguEIAEELEDEMcBEK8BOgsILhCABBCxAxDUAjoICC4QgAQQsQM6FAguEIAEELEDEIMBEMcBEK8BENQCOgsILhCABBDHARCvAToOCC4QgAQQsQMQgwEQ1AI6BQguEIAEOg0IABCABBCHAhDJAxAUUM8BWJgkYJslaARwAHgAgAFsiAHfDJIBBDIyLjGYAQCgAQGwAQo&sclient=gws-wiz" target="_blank">Brooklyn, NY</a> (where Codédex is based) in °F.</p>
         
         <p>Use the following formula and write it out in Python:</p>
 
         <p>
-          \[C = {F - 32 \over 1.8}\]
+          \[Celsius = {Fahrenheit - 32 \over 1.8}\]
         </p>
 
         <p>Print out the converted temperature.</p>
@@ -143,7 +158,7 @@
 
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       <br>
       <br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/2-variables/temperature.py" target="_blank" rel="noopener">temperature.py</a></h5>

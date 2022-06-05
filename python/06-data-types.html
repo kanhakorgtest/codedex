@@ -35,6 +35,8 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -76,38 +78,41 @@
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Variables</h3>
         <br>
 
-        <p>Variables are used for storing data values. They have a name and they hold a value.</p>
+        <p>In programming, <b>variables</b> are used for storing data values. Each variable has a name and they hold a value.</p>
           
-        <p>Every variable has a name which can consist of letters, numbers, and the underscore character _.</p>
+        <p>The variable name can consist of letters, numbers, and the underscore character _.</p>
 
-        <p>These are all valid variable names and assignment:</p>
+        <p>These are all valid variable names and values:</p>
 
         <pre class="line-numbers">
           <code class="python">
-          user_name = "@codedex.io"
-          user_id = 420
+          name = "Sonny Li"
+          id = 420202269
+          completed = 5
+          xp = 70
+          streak = 3
           verified = False
           </code>
         </pre>
 
-        <p>The <code>=</code> equal sign means assigment:</p>
-        <p>&nbsp;&nbsp;• We are assigning the string value <code>"@codedex.io"</code> to the variable <code>user_name</code>.</p>
-        <p>&nbsp;&nbsp;• We are assigning the number value <code>420</code> to the variable <code>user_id</code>.</p>
-        <p>&nbsp;&nbsp;• We are assigning the Boolean value <code>"False"</code> to the variable <code>verified</code>.</p>
+        <p>The <code>=</code> equal sign means assignment:</p>
+        <p>&nbsp;&nbsp;• We are assigning the string value <code>"Sonny Li"</code> to the variable <code>name</code>.</p>
+        <p>&nbsp;&nbsp;• We are assigning the number value <code>420202269</code> to the variable <code>id</code>.</p>
+        <p>&nbsp;&nbsp;• We are assigning the Boolean value <code>False</code> to the variable <code>verified</code>.</p>
 
         <p>We can also change the value of a variable, or print it out:</p>
 
         <pre class="line-numbers">
           <code class="python">
-          user_name = "@codedex.io"
-          user_id = 420
-          verified = False
+          xp = 70
 
-          user_id = 430
-          print(user_id)    # Output: 430
+          xp = 80
+
+          print(xp)    # Output: 90
           </code>
         </pre>
 
+        <p>Here, we are assigning the number value <code>70</code> to the variable <code>xp</code>. Then, we are reassigning the string value <code>80</code> to the same variable</code>. And printing it out.</p>
       </section> 
       <br>
 
@@ -119,8 +124,8 @@
 
         <pre class="line-numbers">
           <code class="python">
-          year = 2022
-          age = 30
+          year = 2023
+          age = 32
           </code>
         </pre>
 
@@ -147,7 +152,8 @@
         </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
+
   </div>
 
   <div class="container" style="margin-top: 50px; font-size: 60%">

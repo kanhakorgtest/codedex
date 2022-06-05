@@ -38,6 +38,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -74,24 +77,25 @@
         <br>
       </section>
 
-      <!-- Exponention -->
+      <!-- Exponentiation -->
       <section class="topic">
-        <h3 id="installation"><a href="#installation">#</a>&nbsp;Exponention</h3>
+        <h3 id="installation"><a href="#installation">#</a>&nbsp;Exponents</h3>
         <br>
 
-        <p>
-          Python can also perform exponentiation. In written math, you might see an exponent as a superscript number, but typing superscript numbers isn’t always easy on modern keyboards. Since this operation is so related to multiplication, we use the notation <code>**</code>.</p>
+        <p>Python can also perform exponentiation such as 2³ or 10².</p>
+        
+        <p> In written math, we might see an exponent as a superscript number (like above), but typing superscript numbers isn’t always easy on modern keyboards. Since exponentiation is super similar to multiplication, Python use the notation <code>**</code>.</p>
 
-          <pre class="line-numbers">
-            <code class="python">
-            score = 2 ** 2      # score is 4
-            score = 2 ** 3      # score is now 8
-            score = 2 ** 4      # score is now 16
-            score = 2 ** 5      # score is now 32
-  
-            print(score)        # Output: 32
-            </code>
-          </pre>
+        <pre class="line-numbers">
+          <code class="python">
+          score = 2 ** 2      # score is 4
+          score = 2 ** 3      # score is now 8
+          score = 2 ** 4      # score is now 16
+          score = 2 ** 5      # score is now 32
+
+          print(score)        # Output: 32
+          </code>
+        </pre>
       </section>
       <br>
 
@@ -100,9 +104,9 @@
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
                 
-        <p>The body mass index (BMI) is commonly used by health and nutrition professionals to estimate human body fat in populations.</p>
+        <p>The <a href="https://en.wikipedia.org/wiki/Body_mass_index" target="_blank">body mass index</a> (BMI) was created by a Belgian mathematician in the 1850's and it's used by health and nutrition professionals to estimate human body fat in certain populations.</p>
 
-        <p>It is computed by taking the individual's weight (mass) in kilograms and dividing it by the square of their height in meters.</p>
+        <p>It is computed by taking an individual's weight (mass) in kilograms and dividing it by the square of their height in meters.</p>
 
         <p>
           \[bmi = {mass \over height²}\]
@@ -113,7 +117,7 @@
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       <br>
       <br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/2-variables/bmi.py" target="_blank" rel="noopener">bmi.py</a></h5>
