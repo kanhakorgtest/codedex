@@ -35,6 +35,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -75,30 +78,33 @@
       <section class="topic">
         <h3 id="installation"><a href="#print">#</a>&nbsp;Congrats!</h3>
         <br>
-        <p>Here's a review of what we learned:</p>
+        <p>Here's a recap of everything we learned so far:</p>
 
         <ul>
           <li>Control flow is the order in which the program's code executes.</li>
-          <li><code>if</code> statement test a condition for truth and execute the code if it is <code>True</code>.</li>
+          <li><code>if</code> statement tests a condition for truth and executes the code if it is <code>True</code>.</li>
           <li><code>elif</code>clause can be added between <code>if</code> and <code>else</code>.</li>
-          <li><code>else</code> execute the code if none of above is <code>True</code>.</li>
+          <li><code>else</code> executes the code if none of above is <code>True</code>.</li>
+          <li>Relational operators are used to compare two values: <code>==</code>, <code>!=</code>, <code>></code>, <code>>=</code>, <code><</code>, <code><=</code>.</li>
         </ul>
+
+        <p>Now let's put all your learnings together to create your own quiz!</p>
         <br>
         <br>
         
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
         
-        <p>The <a href="https://en.wikipedia.org/wiki/Magic_8-ball" target="_blank">Sorting Hat</a> is a talking hat at Hogwarts School of Witchcraft and Wizardry. It determines which of the four school Houses each new student belongs most to:</p>
+        <p>The <a href="https://www.google.com/search?q=sorting+hat" target="_blank">Sorting Hat</a> is a magical talking hat at Hogwarts School of Witchcraft and Wizardry. The hat decides which of the four "Houses" each freshman student goes to:</p>
 
         <ul>
-          <li>Gryffindor</li>
-          <li>Hufflepuff</li>
-          <li>Ravenclaw</li>
-          <li>Slytherin</li>
+          <li>🦁 Gryffindor</li>
+          <li>🦅 Ravenclaw</li>
+          <li>🦡 Hufflepuff</li>
+          <li>🐍 Slytherin</li>
         </ul>
 
-        <p>Write a <b>sortinghat.py</b> program that asks the user some questions and places them into one of the four Houses based on their answers!</p>
+        <p>Write a <b>sortinghat.py</b> program that asks the user some questions using <code>int()</code> and places them into one of the Houses based on their answers:</p>
 
         <pre class="line-numbers">
           <code class="python">
@@ -110,15 +116,15 @@
         </pre> 
 
         <ul>
-          <li>If answer is 1, one point to both Gryffindor and Ravenclaw.</li>
-          <li>Else if answer is 2, one point to both Hufflepuff and Slytherin.</li>
-          <li>Else, output the phrase "Invalid input".</li>
+          <li>If answer is equal to 1, Gryffindor and Ravenclaw both get a +1.</li>
+          <li>Else if answer is equal to 2, Hufflepuff and Slytherin both get a +1.</li>
+          <li>Else, output the message "Wrong input."</li>
           </li>
         </ul>
 
         <pre class="line-numbers">
           <code class="python">
-          Q1) When I'm dead, I want people to remember me as:
+          Q2) When I'm dead, I want people to remember me as:
  
             1) The Good
             2) The Great
@@ -128,10 +134,11 @@
         </pre> 
 
         <ul>
-          <li>If answer is 1, add one point to Hufflepuff.</li>
-          <li>Else if answer is 2, add one point to Slytherin.</li>
-          <li>Else if answer is 3, add one point to Ravenclaw.</li>
-          <li>Else if answer is 4, add one point to Gryffindor.</li>
+          <li>If the answer is 1, Hufflepuff +1.</li>
+          <li>Else if answer is 2, Slytherin +1.</li>
+          <li>Else if answer is 3, Ravenclaw +1.</li>
+          <li>Else if answer is 4, Gryffindor +1.</li>
+          <li>Else, output the message "Wrong input."</li>
         </ul>
 
         <pre class="line-numbers">
@@ -146,18 +153,28 @@
         </pre> 
 
         <ul>
-          <li>If the answer is 1, add one to Slytherin.</li>
-          <li>Else if the answer is 2, add one to Hufflepuff.</li>
-          <li>Else if the answer is 3, add one to Ravenclaw.</li>
-          <li>Else if the answer is 4, add one to Gryffindor.</li>
-          <li>Else, output Invalid input.</li>
+          <li>If the answer is 1, Slytherin +1.</li>
+          <li>Else if the answer is 2, Hufflepuff +1.</li>
+          <li>Else if the answer is 3, Ravenclaw +1.</li>
+          <li>Else if the answer is 4, Gryffindor +1.</li>
+          <li>Else, output "Wrong input."</li>
         </ul>
-    
-        <br>        
+        
+        <br>
+        <p>Lastly, print out all the total points!</p>
+        <br>
+
+        <details>
+          <summary>Hint</summary>
+          <br>
+          <p>This is going to be the longest program you've written so far, so take it slow. And don't forget to run it every few lines.</p>
+        </details>
+        <br>
+        <br>
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button> 
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       
       <br><br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/sorting_hat.py" target="_blank" rel="noopener">sorting_hat.py</a></h5>
