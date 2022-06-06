@@ -35,6 +35,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -76,17 +79,24 @@
         <h3 id="installation"><a href="#print">#</a>&nbsp;Loop</h3>
         <br>
 
-        <p>A <b>loop</b> is a programming tool that repeats some code or a set of instructions until a specified condition is reached. As a programmer, we’ll find that we rely on loops all the time!</p>
+        <p>In programming, a <b>loop</b> is used to repeat a block of code until a specified condition is satisfied. It's another tool that's used a ton!</p>
         
         <p>People will often use the generic term “iterate” when referring to loops; iterate simply means “to repeat”.</p>
 
-        <p>The first kind of loop that we are going to learn is the <code>while</code> loop. You can think of the <code>while</code> loop like the <a href="https://media.giphy.com/media/l2Je7eBCm7SxObRPG/giphy.gif" target="_blank">traffic circle</a>.</p>
+        <p>The first kind of loop that we are going to learn is the <code>while</code> loop. You can think of the <code>while</code> loop like a traffic circle.</p>
+
+        <p>Each lap is one iteration! The car will iterate over and over again until it can't do so anymore.</p>
         <br>
-          
+
+        <img src="../images/roundabout.gif">
+        <br>
+        <br>
+        <br>
+
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
         
-        <p>Before we dive deep into while loop, let's do a demo!</p>
+        <p>Before we dive deep into the <code>while</code> loop, let's see a demo using a bank's ATM. 🏦</p>
 
         <p>Create a <strong>enter_pin.py</strong> program and type in the following:</p>
 
@@ -94,28 +104,30 @@
           <code class="python">
           print("BANK OF CODéDEX")  
 
-          pin = input("Enter your PIN: ")
+          pin = int(input("Enter your PIN: "))
           
-          while pin != '1234':
+          while pin != 1234:
             pin = input("Incorrect PIN. Enter your PIN again: ")
           
-          if pin == '1234':
+          if pin == 1234:
             print("PIN accepted!")
           </code>
         </pre>
 
-        <p>Run the program.</p>
+        <p>Run the program. When the program prints out the "Enter your PIN: " message, try the following:</p><br>
 
-        <p>When the program asks you to Enter your PIN:, try the following:
-
-        <p>Press 1111 and press <kbd>enter</kbd>.</p>
-        <p>Press 2019 and press <kbd>enter</kbd>.</p>
-        <p>Press 1234 and press <kbd>enter</kbd>.</p>
+        <ol>
+          <li>Press 1111 and then <kbd>enter</kbd> key.</li><br>
+          <li>Press 2023 and then <kbd>enter</kbd> key.</li><br>
+          <li>Press 1991 and then <kbd>enter</kbd> key.</li><br>
+          <li>Press 1234 and then <kbd>enter</kbd> key.</li><br>
+        </ol>
+       
         <br>
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       <br>
       <br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/4-loops/enter_pin.py" target="_blank" rel="noopener">enter_pin.py</a></h5>
