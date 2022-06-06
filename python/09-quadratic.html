@@ -38,6 +38,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -85,18 +88,18 @@
 
           <pre class="line-numbers">
             <code class="python">
-            username = input("Enter your user name:")
+            username = input("Enter your name:")
 
             print(username)
             </code>
           </pre>
 
-        <p>The output will say "Enter your user name:" and the user can type in something, hit <kbd>enter</kbd> and whatever the user typed gets stored into <code>username</code>.</p>
-        <p>So here, suppose we type in @codedex.io and press <kbd>enter</kbd>, this will output:</p>
+        <p>The output will say "Enter your name:" and the user can type in something, hit <kbd>enter</kbd>, and whatever the user typed gets stored into the variable <code>username</code>.</p>
+        <p>So here, suppose the user type in their name Richard Hendricks and press <kbd>enter</kbd>, this will output:</p>
 
           <pre class="line-numbers">
             <code class="python">
-            @codedex.io
+            Richard Hendricks
             </code>
           </pre>
           
@@ -112,7 +115,7 @@
           </code>
         </pre>
 
-        <p>Now that the user types 21 and press <kbd>enter</kbd>, the <code>age</code> variable will be an integer 21, and not a text string "21".</p>
+        <p>Now that the user types 24 and press <kbd>enter</kbd>, the <code>age</code> variable will be an integer 24, and not a text string "24".</p>
       </section>
       <br>
 
@@ -125,21 +128,21 @@
 
         <p>\[ax² + bx + c = 0\]</p>
           
-        <p>The x represents an unknown, and a, b, and c represent known numbers</p>
-        
-        <p>The \(x\) values are the x-intercepts of the graph, while \(a\), \(b\), and \(c\) are constants.</p>
+        <p>The \(x\) represents an unknown, and \(a\), \(b\), \(c\) represent known numbers.</p>
           
-        <p>Create a <b>quadratic.py</b> program that solves the quadratic equation by finding the two \(x\)'s:</p>
+        <p>Create a <b>quadratic.py</b> program that solves the quadratic equation by finding the two \(x\)'s using the quadratic formula:</p>
 
         <p>
           \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}\]
         </p>
+
+        <p>Your program should ask the user 3 different numbers (\(a\), \(b\), \(c\)), do some calculation of them, and spits out the two \(x\)'s.</p>
         
         <br>
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       <br>
       <br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/2-variables/quadratic.py" target="_blank" rel="noopener">quadratic.py</a></h5>
