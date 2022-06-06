@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codédex | Magic 8-Ball </title>
+  <title>Codédex | Magic 8 Ball </title>
   <!-- NES.css -->
   <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <!-- Google Font -->
@@ -34,6 +34,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -66,7 +69,7 @@
 
       <!-- Title -->
       <section class="topic">
-        <h2 id="about">14. Magic 8-Ball (+15 XP)</h2>
+        <h2 id="about">14. Magic 8 Ball (+15 XP)</h2>
         <br>
       </section>
 
@@ -74,8 +77,11 @@
       <section class="topic">
         <h3 id="installation"><a href="#print">#</a>&nbsp;Random</h3>
         <br>
-        <p>In Python, we can use the <code>.randint()</code> function from the <code>random</code> module to generate a random number from a range.</p>
 
+        <p>In Python, <b>modules</b> are <code>.py</code> files containing Python code that can be imported inside another Python program. The Python standard library contains well over 200 modules that we can use.</p>
+
+        <p>We can use the <code>.randint()</code> function from a module called <code>random</code> to generate a random number from a range.</p>
+        
         <p>But first, let’s import this module so we can use its functions.</p>
 
         <pre class="line-numbers">
@@ -93,7 +99,9 @@
           </code>
         </pre>  
 
-        <p>which will generate a random number between 1 (inclusive) and 9 (inclusive).</p>
+        <p>This will generate a random number between 1 and 9 (inclusive of both).</p>
+
+        <p>Together, the code will look like:</p>
 
         <pre class="line-numbers">
           <code class="python">
@@ -105,18 +113,16 @@
           </code>
         </pre>  
 
-        <p>The output should be different each time.</p>
+        <p>The output should be different each time it runs: 2, 0, 8, 5, 9, 2, 1, 3...</p>
         <br>
         <br>
         
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
         
-        <p>The <a href="https://en.wikipedia.org/wiki/Magic_8-ball" target="_blank">Magic 8-Ball</a> is a popular toy developed in the 1950s for fortune-telling or advice seeking. 🎱</p>
+        <p><a href="https://en.wikipedia.org/wiki/Magic_8_ball" target="_blank">Magic 8 Ball</a> is a popular office toy and children's toy invented in 1940's for fortune-telling and advice seeking. 🎱</p>
 
-        <p>Create a <b>magic8.py</b> program that can answer any “Yes” or “No” question with a different fortune each time it executes.</p>
-
-        <p>We’ll be using the following 9 possible answers for our Magic 8-Ball:
+        <p>It's an oversized 8 ball with some of the following answers:</p>
         
         <ul>
           <li><code>Yes - definitely.</code></li>
@@ -130,12 +136,14 @@
           <li><code>Very doubtful.</code></li>
         </ul>
 
+        <p>Create a <b>magic8.py</b> program that can answer any Yes or No questions with a different fortune/advice each time it executes.</p>
+
         <p>The output of should have the following format:</p>
 
         <pre class="line-numbers">
           <code class="python">
-          Question: [Question]
-          Magic 8-Ball: [Answer]
+          Question:      [Question]
+          Magic 8 Ball:  [Answer]
           </code>
         </pre>  
 
@@ -143,8 +151,8 @@
 
         <pre class="line-numbers">
           <code class="python">
-          Question: Is this real life?
-          Magic 8-Ball: Better not tell you now.
+          Question:      Is this a simulation?
+          Magic 8 Ball:  Better not tell you now.
           </code>
         </pre> 
 
@@ -152,7 +160,7 @@
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button> 
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       
       <br><br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/magic_8_ball.py" target="_blank" rel="noopener">magic_8_ball.py</a></h5>

@@ -36,6 +36,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+  
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -76,7 +79,8 @@
       <section class="topic">
         <h3 id="installation"><a href="#print">#</a>&nbsp;Relational Operators</h3>
         <br>
-        <p>When writing conditions, sometimes we need to use different types of operators to compare values. These operators are called <b>relational operators</b>.</p>
+
+        <p>A lot of the times inside conditions, we are comparing two values. To do so, we need to use a different type of operators called <b>relational operators</b> that compares values:</p>
 
         <ul>
           <li><code>==</code> equal to</li>
@@ -91,7 +95,7 @@
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Elif</h3>
         <br>
         
-        <p>One or more <code>elif</code>else if statements can be optionally added in between the <code>if</code> and <code>else</code> to provide additional condition(s) to check.</p>
+        <p>One or more <code>elif</code> statements (short for "else if") can be optionally added in between the <code>if</code> and <code>else</code> to provide additional condition(s) to check. Sometimes two is simply not enough.</p>
 
         <pre class="line-numbers">
           <code class="python">
@@ -139,7 +143,7 @@
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button> 
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       
       <br><br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/ph_levels.py" target="_blank" rel="noopener">ph_levels.py</a></h5>
