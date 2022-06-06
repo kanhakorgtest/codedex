@@ -36,6 +36,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -77,27 +80,33 @@
         <h3 id="installation"><a href="#print">#</a>&nbsp;Control Flow</h3>
         <br>
 
-        <p>Every program we’ve seen so far has only had one possible path of execution — they all execute line by line, from top to bottom. And every time you run one of those programs, it gives you the same exact result. But it’s the twenty-first century, and we like options!</p>
+        <p>So far, every Python program that we’ve encountered has only had one path of execution — they all execute one line at a time, from top to bottom. And every time you run them, it gives you the same exact result.</p>
 
-        <p>In the "Control Flow" section, we will explore how programs make decisions by evaluating conditions and introduce logic into our code!</p>
+        <p>Sometimes, we want our program to do different things based on different conditions.</p>
+        
+        <p>It's like going down a highway and there's a fork in the road up ahead with a sign that reads "San Francisco: left. Los Angeles: right."</p>
+
+        <img src="../images/fork.png">
+        <br>
+        <br>
+
+        <p>In the "Control Flow" chapter, we will explore how programs "make decisions" by evaluating different conditions. And start introducing logic into our code!</p>
         <br>
         
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
+       
         <br>
+
+        <p>Before we dive deep into something called an <code>if</code> statement, let's do a demo using a coin flip simulation!</p>
+
         
-        <img src="../images/pixel_coin_flip.gif" width="60"/>
-        <br>
-        <br>
-
-        <p>Before we dive deep into <code>if</code> statement, let's do a demo using a coin flip!</p>
-
         <p>Create a <strong>coin_flip.py</strong> program and type in the following:</p>
 
         <pre class="line-numbers">
           <code class="python">
           import random
 
-          num = random.randint(0, 1)
+          num = random.randint(0, 1)   # RNGesus will give us a random number between 0 and 1
              
           if num > 0.5: 
             print("Heads")
@@ -106,23 +115,32 @@
           </code>
         </pre>
 
-        <p>This program simulates a coin toss:</p>
+        <p>All you need to know is that this program simulates a coin toss:</p>
         <ul>
-          <li>50% of the time, it's Heads.</li>
-          <li>50% of the time, it's Tails.</li>
+          <li>≈ 50% of the time, it's "Heads".</li>
+          <li>≈ 50% of the time, it's "Tails".</li>
         </ul>
 
-
-        <p>Run the program 5 times to see the <code>if</code>/<code>else</code> statement in action!</p>
+        <img src="../images/pixel_coin_flip.gif" width="60"/>
+        <br>
+        <br>
+        <p>Run the program 5 times to get a taste of the <code>if</code>/<code>else</code> statement!</p>
 
         <p>How many times did it go Heads?</p>
         <br>
+
+        <details>
+          <summary>Hint</summary>
+          <br>
+          <p>In this challenge, you don't have to know what's going on with the code. You can just copy and paste.</p>
+        </details>
+      
         <br>
         <br>
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       <br>
       <br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/coin_flip.py" target="_blank" rel="noopener">coin_flip.py</a></h5>

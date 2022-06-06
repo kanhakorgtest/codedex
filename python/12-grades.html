@@ -35,6 +35,9 @@
 
     gtag('config', 'G-MLKGQLWZF4');
   </script>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -67,7 +70,7 @@
 
       <!-- Title -->
       <section class="topic">
-        <h2 id="about">12. Grades (+15 XP)</h2>
+        <h2 id="about">12. Grades (+10 XP)</h2>
         <br>
       </section>
 
@@ -93,7 +96,7 @@
           </code>
         </pre>
 
-        <p><b>Note:</b> The code "inside" must be indented (preferabbly 2 spaces).</p>
+        <p><b>Note:</b> The code "inside" the <code>if</code> statement must be indented (preferably 2 spaces).</p>
         <br>
 
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Else</h3>
@@ -132,7 +135,7 @@
       </section>
 
       <a class="nes-btn" href="../index.html">Back</a>
-      <button type="button" class="nes-btn is-primary">Complete</button>
+      <button type="button" class="nes-btn is-primary" onclick="confetti({particleCount: 100, spread: 70, origin: { y: 0.6 }});">Complete</button>
       <br>
       <br>
       <h5>Solution: <a href="https://github.com/codedex-io/python-101/blob/main/3-conditionals/grades.py" target="_blank" rel="noopener">grades.py</a></h5>
