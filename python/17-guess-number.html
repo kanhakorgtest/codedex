@@ -79,31 +79,86 @@
         <h3 id="installation"><a href="#print">#</a>&nbsp;Loop</h3>
         <br>
 
-        <p>Now that we got a demo of loops, let’s write one!</p>
+        <p>Now that we got a sneak peek of a <code>while</code> loop, let’s see what it does under the hood!</p>
 
-        <p>A <code>while</code> loop looks very similar to an <code>if</code> statement. And just like an <code>if</code> statement, it executes the code if the condition is <code>True</code>.</p>
+        <p>A <code>while</code> loop looks very similar to an <code>if</code> statement. Just like an <code>if</code> statement, it executes the code if the condition is <code>True</code>.</p>
           
         <p>However, the difference is that the <code>while</code> loop will continue to execute the code inside of it, over and over again, as long as the condition is <code>True</code>.</p>
-          
-        <p>Here is what a while loop looks like:</p>
-        
+                
         <pre class="line-numbers">
           <code class="python">
           while condition:
-            code inside
+            # code inside
           </code>
         </pre>
 
-        <p>In other words, instead of executing if something is true, it executes while that thing is true.</p>
+        <p>In other words, instead of executing once <i>if</i> a condition is true, it executes again and again <i>while</i> that condition is true.</p>
+
+        <p>Here, we have a <code>while</code> loop that asks the user to guess a number:</p>
 
         <pre class="line-numbers">
           <code class="python">
-          while guess != 8: 
-            print("Wrong guess, try again: ")
-            guess = input()
+          guess = 0
+
+          while guess != 6: 
+            guess = int(input("Guess the number: "))
           </code>
         </pre>
-          
+
+        <p>This will run over and over again until the user guesses the number 6: </p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          Guess the number: 5
+          Guess the number: 3
+          Guess the number: 6
+          </code>
+        </pre>
+
+        <p>The variable <code>guess</code> starts at 0 on the first line and then the program enters the <code>while</code> loop:</p>
+
+        <ol>
+          <li>It checks the condition: is it true that 0 doesn't equal 6? Nope, okay then, run the code inside.</li>
+          <li>It checks the condition again: is it true that 5 doesn't equal 6? Nope, okay then, run the code inside.</li>
+          <li>It checks the condition again: is it true that 3 doesn't equal 6? Nope, okay then, run the code inside.</li>
+          <li>It checks the condition again: is it true that 6 doesn't equal 6? Yep! Okay, it exits the <code>while</code> and doesn't run the code inside.</li>
+        </ol>
+
+        <p>The second that the condition becomes false, the program exits the <code>while</code> loop and continues on from the line after it.</p>
+        <p><b>Note:</b> If the condition is <code>False</code> from the get-go, then the code block wouldn't run at all and will be skipped.</p>
+        <br>
+
+        
+        <h3 id="installation"><a href="#print">#</a>&nbsp;Logical Operators</h3>
+        <br>
+
+        <p>One more thing that we should learn is logical operators.</p>
+
+        <p><b>Logical operators</b>, also known as Boolean operators, combine and evaluate two conditions. They are <code>and</code>, <code>or</code>, <code>not</code>.</p>
+
+        <ul>
+          <li>The <code>and</code> operator returns <code>True</code> if both of the conditions are <code>True</code>.</li>
+          <li>The <code>or</code> operator returns <code>True</code> if at least one of the conditions is <code>True</code>.</li>
+          <li>The <code>not</code> operator returns <code>True</code> if both conditions return <code>True</code>.</li>
+        </ul>
+
+        <p></p>
+                  
+        <p>Here are some examples:</p>
+
+        <pre class="line-numbers">
+          <code class="python">
+          if hunger > 4 and anger > 1:
+            print("Hangry")
+
+          if coffee > 0 or bubble_tea > 0:
+            print("☺️")
+
+          if not tired:
+            print("Let's code!")
+          </code>
+        </pre>
+
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions (Needs Work)</h3>
         <br>
         
@@ -113,12 +168,24 @@
 
         <pre class="line-numbers">
           <code class="python">
-          while guess != 8: 
-            print("Wrong guess, try again: ")
-            guess = input()
+          guess = 0
+
+          while guess != 6: 
+            guess = int(input("Guess the number:  "))
+            
+          print("You got it!")
           </code>
         </pre>
         
+        <p>Run the code a few times so that you understand what it does.</p>
+
+        <p>Let's make it so that it's the same guessing game, but there is a new limit to the number of tries (it was infinite before).</p>
+        
+        <p>First, introduce a variable called <code>tries</code> at the top and give it a value of 0.<p>
+        
+        <p>Then, add another condition to the <code>while</code> using a logical operator.</p>
+        
+        <p>What else needs to change? 🤔</p>
         <br>
       </section>
 
