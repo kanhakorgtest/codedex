@@ -235,7 +235,21 @@
           >
             <h3 class="title">My Stats</h3>
 
-            <img src="./images/avatar.gif" height="60" />
+            <script>
+              var avatars = [
+	              './images/boy.gif', 
+	              './images/girl.gif', 
+	              './images/robot.gif'
+              ];
+
+              var num = 1
+
+              function toggleImage() {
+                document.getElementById('avatar').src = avatars[num++ % avatars.length];
+              }
+            </script>
+
+            <img src="./images/boy.gif" height="60" id="avatar" onclick="toggleImage();" />
 
             <div
               id="userName"
