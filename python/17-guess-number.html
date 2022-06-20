@@ -118,10 +118,10 @@
         <p>The variable <code>guess</code> starts at 0 on the first line and then the program enters the <code>while</code> loop:</p>
 
         <ol>
-          <li>It checks the condition: is it true that 0 doesn't equal 6? Nope, okay then, run the code inside.</li>
-          <li>It checks the condition again: is it true that 5 doesn't equal 6? Nope, okay then, run the code inside.</li>
-          <li>It checks the condition again: is it true that 3 doesn't equal 6? Nope, okay then, run the code inside.</li>
-          <li>It checks the condition again: is it true that 6 doesn't equal 6? Yep! Okay, it exits the <code>while</code> and doesn't run the code inside.</li>
+          <li>It checks the condition: is it true that 0 doesn't equal 6? Yep. Okay then, run the code inside.</li>
+          <li>It checks the condition again: is it true that 5 doesn't equal 6? Yep. Okay then, run the code inside.</li>
+          <li>It checks the condition again: is it true that 3 doesn't equal 6? Yep. Okay then, run the code inside.</li>
+          <li>It checks the condition again: is it true that 6 doesn't equal 6? Nope! Okay, it exits the <code>while</code> and doesn't run the code inside.</li>
         </ol>
 
         <p>The second that the condition becomes false, the program exits the <code>while</code> loop and continues on from the line after it.</p>
@@ -134,16 +134,14 @@
 
         <p>One more thing that we should learn is logical operators.</p>
 
-        <p><b>Logical operators</b>, also known as Boolean operators, combine and evaluate two conditions. They are <code>and</code>, <code>or</code>, <code>not</code>.</p>
+        <p><b>Logical operators</b>, also known as Boolean operators, combine and evaluate two conditions. They are <code>and</code>, <code>or</code>, and <code>not</code>.</p>
 
         <ul>
-          <li>The <code>and</code> operator returns <code>True</code> if both of the conditions are <code>True</code>.</li>
-          <li>The <code>or</code> operator returns <code>True</code> if at least one of the conditions is <code>True</code>.</li>
-          <li>The <code>not</code> operator returns <code>True</code> if both conditions return <code>True</code>.</li>
+          <li>The <code>and</code> operator returns <code>True</code> if both of the conditions are <code>True</code>. And returns <code>False</code> otherwise.</li>
+          <li>The <code>or</code> operator returns <code>True</code> if at least one of the conditions is <code>True</code>. And returns <code>False</code> otherwise.</li>
+          <li>The <code>not</code> operator returns <code>True</code> the condition is <code>False</code>. And reverse.</li>
         </ul>
-
-        <p></p>
-                  
+        
         <p>Here are some examples:</p>
 
         <pre class="line-numbers">
@@ -158,6 +156,49 @@
             print("Let's code!")
           </code>
         </pre>
+
+        <div class="nes-table-responsive">
+          <table class="nes-table is-bordered is-centered">
+            <thead>
+              <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>A and B</th>
+                <th>A or B</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>False</td>
+                <td>False</td>
+                <td>False</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td>False</td>
+                <td>True</td>
+                <td>False</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td>True</td>
+                <td>False</td>
+                <td>False</td>
+                <td>True</td>
+              </tr>
+              <tr>
+                <td>True</td>
+                <td>True</td>
+                <td>True</td>
+                <td>True</td>
+              </tr>
+            </tbody>
+          </table>
+
+          
+        </div>
+        <br>
+        <br>
 
         <h3 id="installation"><a href="#installation">#</a>&nbsp;Instructions</h3>
         <br>
