@@ -1,5 +1,7 @@
 # Codédex
 
-Learn to code for Gen Z.
+Welcome to the Codédex GitHub repo.
+
+Learn to code platform for Gen Z.
 
 www.codedex.io
