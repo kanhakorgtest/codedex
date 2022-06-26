@@ -1,3 +1,5 @@
 # Codédex
 
-asdfasdfasdf
+Learn to code for Gen Z.
+
+www.codedex.io
