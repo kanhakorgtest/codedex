@@ -204,6 +204,10 @@ a {
     align-items: center;
   }
 
+  .material-symbols-outlined {
+    display: none !important;
+  }
+
   .root-anchor {
     margin-left: 20px;
   }
