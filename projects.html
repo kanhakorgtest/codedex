@@ -47,9 +47,9 @@
 
   <!-- https redirect -->
   <script>
-    if (location.protocol != 'https:') {
-      location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    }
+    // if (location.protocol != 'https:') {
+    //   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    // }
   </script>
 </head>
 <body class="container">
@@ -139,7 +139,7 @@
           <div class="lists">
             <h3>Build Discord Bot with Python</h3>
             <p>by sonnynomnom</p>
-            <p>6/1/2022</p>
+            <p>8/1/2022</p>
             </ul>
           </div>
   
@@ -226,15 +226,49 @@
           Projects
         </h3>
 
+        <script>
+          $(".project").click(function() {
+            window.location = "./projects/sonnynomnom/50-terminal-project-ideas/50-terminal-project-ideas.html"; 
+            return false;
+          });
+        </script>
+        
+        <div class="nes-container is-dark nes-pointer project">
+          <div class="row">
+            <div class="col-xs-2">
+              <img 
+                src="projects/sonnynomnom/50-terminal-project-ideas/terminal_project.jpeg" 
+                style="width: 100%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;" />
+            </div> 
+            <div class="col-xs-10">
+              <a href="./projects/sonnynomnom/50-terminal-project-ideas/50-terminal-project-ideas.html" style="color:#007bff"><h3>50 Terminal Project Ideas</h3></a>
+              <p>by sonynomnom</p>
+              <div>
+                <a href="#" class="nes-badge">
+                  <span class="is-primary">Python</span>
+                </a>
+
+                <a href="#" class="nes-badge">
+                  <span class="is-success">
+                   Lvl <i class="nes-icon is-small star"></i><i class="nes-icon is-small star"></i><i class="nes-icon is-small star is-half"></i><i class="nes-icon is-small star is-transparent"></i><i class="nes-icon is-small star is-transparent"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        
+
         <div class="nes-container is-dark">
           <div class="row">
             <div class="col-xs-2">
               <img 
                 src="projects/sonnynomnom/discord-bot-with-python/discord_bot3.png" 
                 style="width: 100%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;" />
-            </div>
+            </div> 
             <div class="col-xs-10">
-              <h3>Build Discord Bot with Python (Coming Soon)</h3>
+              <h3>Build Discord Bot (TBA)</h3>
               <p>by sonynomnom</p>
               <div>
                 <a href="#" class="nes-badge">
@@ -258,7 +292,7 @@
                 style="width: 100%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;" />
             </div>
             <div class="col-xs-10">
-              <h3>Build Minecraft Mod with Python (Coming Soon)</h3>
+              <h3>Build Minecraft Mod (TBA)</h3>
               <p>by Dnoxal</p>
               <div>
                 <a href="#" class="nes-badge">
@@ -283,7 +317,7 @@
                 style="width: 100%; height: auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;" />
             </div>
             <div class="col-xs-10">
-              <h3>Build Snake Game with Python (Coming Soon)</h3>
+              <h3>Build Snake Game (TBA)</h3>
               <p>by sonynomnom</p>
               <div>
                 <a href="#" class="nes-badge">
